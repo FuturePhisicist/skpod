@@ -1,5 +1,35 @@
 import itertools, os, subprocess
 
+def run_cmd(cmd):
+    try:
+        r = subprocess.run(
+            cmd,
+            shell=True,
+            check=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            universal_newlines=True, # text=True for old Python
+        )
+        if r.stdout:
+            print("STDOUT:")
+            print(r.stdout)
+        if r.stderr:
+            print("STDERR:")
+            print(r.stderr)
+
+        return r
+    except subprocess.CalledProcessError as e:
+        print("Command failed!")
+        if e.stdout:
+            print("STDOUT:")
+            print(e.stdout)
+        if e.stderr:
+            print("STDERR:")
+            print(e.stderr)
+
+        return -1
+    print()
+
 import polus_constants
 
 polus_constants.THREADS_CNT_LIST = [1] # NO PARALLELISM HERE
@@ -32,8 +62,10 @@ for i, code in enumerate(SOURCE_CODE_FILES, start=1):
         if not os.path.exists(bin_path):
             compile_command = f"gcc -std=gnu99 {O} {fm} -o {bin_path} {code}.c" # no "-fopenmp"; GNU99 for wall time!
 
+            print("COMPILING:")
             print(compile_command)
-            subprocess.run(compile_command, shell=True, check=True)
+            run_cmd(compile_command)
+            print()
 
         file_name = f"{BASE_DIRECTORY}/{polus_constants.RESULTS_DIRECTORY}/{tag}"
         out = file_name + ".out"
@@ -41,9 +73,11 @@ for i, code in enumerate(SOURCE_CODE_FILES, start=1):
         if os.path.exists(out) or os.path.exists(err):
             continue
 
+
         run_command = f"bsub -n 1 -W 15 -oo {out} -eo {err} \"./{bin_path} {n}\"" # no OMP_NUM_THREADS={t}
 
+        print("Running:")
         print(run_command)
-        subprocess.run(run_command, shell=True, check=True)
-
+        run_cmd(run_command)
         print()
+
