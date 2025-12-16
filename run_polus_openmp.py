@@ -73,7 +73,7 @@ for i, code in enumerate(SOURCE_CODE_FILES, start=1):
         if os.path.exists(out) or os.path.exists(err):
             continue
 
-        m = n // 8 + 1
+        m = t // 8 + 1
         run_command = f"bsub -n {m} -W 15 -R span[hosts=1] -oo {out} -eo {err} \"OMP_NUM_THREADS={t} ./{bin_path} {n}\""
 
         print("Running:")
