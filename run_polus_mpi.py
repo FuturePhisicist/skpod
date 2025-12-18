@@ -62,6 +62,12 @@ for i, code in enumerate(SOURCE_CODE_FILES, start=1):
         if not os.path.exists(bin_path):
             # REQUIRES `module load SpectrumMPI`!!!!!!!!!
             compile_command = f"mpicc {O} {fm} -o {bin_path} {code}.c"
+            compile_command = (
+                f"bash -lc '"
+                f"module load SpectrumMPI && "
+                f"{compile_command}"
+                f"'"
+            )
 
             print("COMPILING:")
             print(compile_command)
@@ -74,7 +80,14 @@ for i, code in enumerate(SOURCE_CODE_FILES, start=1):
         if os.path.exists(out) or os.path.exists(err):
             continue
 
+        # REQUIRES `module load SpectrumMPI`!!!!!!!!!
         run_command = f"mpisubmit.pl -p {t} --stdout {out} --stderr {err} ./{bin_path} -- {n}"
+        run_command = (
+            f"bash -lc '"
+            f"module load SpectrumMPI && "
+            f"{run_command}"
+            f"'"
+        )
 
         print("Running:")
         print(run_command)
