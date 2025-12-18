@@ -32,7 +32,7 @@ def run_cmd(cmd):
 
 import polus_constants
 
-
+polus_constants.FFAST_MATH_FLAGS = ["-qstrict", "-qnostrict -D__FAST_MATH__"] # IBM XL C/C++
 
 SOURCE_CODE_FILES = ["v2"]
 BASE_DIRECTORY = "mpi"
@@ -51,7 +51,7 @@ for i, code in enumerate(SOURCE_CODE_FILES, start=1):
         polus_constants.DATASET_SIZE_LIST,
     ):
         opt_tag = O.replace("-", "")       # O0/O1/O2/O3
-        fm_tag  = "ffm" if "-ffast-math" in fm else "noffm" # ffm/noffm
+        fm_tag  = "ffm" if "nostrict" in fm else "noffm" # ffm/noffm, UNIQUE FOR THIS ONE!!!
 
         cnt += 1
         print(f"{cnt:>4} | OPT={opt_tag:<3} | FM={fm_tag:<6} | T={t:<3} | N={n:<7}")
