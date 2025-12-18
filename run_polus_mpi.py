@@ -74,6 +74,12 @@ for i, code in enumerate(SOURCE_CODE_FILES, start=1):
             run_cmd(compile_command)
             print()
 
+        if not os.path.exists(bin_path):
+            print("Error! No binary to submit!!!")
+            print()
+
+            continue
+
         file_name = f"{BASE_DIRECTORY}/{polus_constants.RESULTS_DIRECTORY}/{tag}"
         out = file_name + ".out"
         err = file_name + ".err"
@@ -81,7 +87,8 @@ for i, code in enumerate(SOURCE_CODE_FILES, start=1):
             continue
 
         # REQUIRES `module load SpectrumMPI`!!!!!!!!!
-        run_command = f"mpisubmit.pl -p {t} --stdout {out} --stderr {err} ./{bin_path} -- {n}"
+        m = min(t, 20) # the number of cores in one host
+        run_command = f"bsub -n {m} -R \"span[hosts=1]\" -oo {out} -eo {err} mpirun --oversubscribe -np {t} ./{bin_path} -- {n}"
         run_command = (
             f"bash -lc '"
             f"module load SpectrumMPI && "
@@ -93,3 +100,4 @@ for i, code in enumerate(SOURCE_CODE_FILES, start=1):
         print(run_command)
         run_cmd(run_command)
         print()
+
