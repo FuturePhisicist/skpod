@@ -1,0 +1,357 @@
+\begin{tikzpicture}
+\begin{axis}[width=14cm,height=9cm,grid=both,xlabel={$N$},ylabel={Time [s]},title={Execution time vs N (versions: v1a, v1b) (T=1)},legend pos=north west,legend cell align=left,mark options={scale=0.9}]
+\addplot+[red, thick, solid, mark=*, mark options={draw=red, fill=red}] coordinates {(256,0.236089) (512,0.83152) (1024,4.676434) (2048,13.607391) (4096,68.874543) (8192,803.491068)};
+\addlegendentry{-O0, FastMath OFF}
+\addplot+[red, thick, dashed, mark=*, mark options={draw=red, fill=red}] coordinates {(256,0.220079) (512,1.214488) (1024,3.726119) (2048,18.720092) (4096,71.319478) (8192,840.608619)};
+\addlegendentry{-O0, FastMath ON}
+\addplot+[blue, thick, solid, mark=*, mark options={draw=blue, fill=blue}] coordinates {(256,0.140954) (512,0.544441) (1024,2.227216) (2048,8.335803) (4096,41.942118) (8192,730.512373)};
+\addlegendentry{-O1, FastMath OFF}
+\addplot+[blue, thick, dashed, mark=*, mark options={draw=blue, fill=blue}] coordinates {(256,0.120762) (512,0.498109) (1024,2.007858) (2048,8.123081) (4096,39.578318) (8192,746.751988)};
+\addlegendentry{-O1, FastMath ON}
+\addplot+[green!70!black, thick, solid, mark=*, mark options={draw=green!70!black, fill=green!70!black}] coordinates {(256,0.142159) (512,0.536109) (1024,2.151433) (2048,8.880388) (4096,48.83029) (8192,736.181778)};
+\addlegendentry{-O2, FastMath OFF}
+\addplot+[green!70!black, thick, dashed, mark=*, mark options={draw=green!70!black, fill=green!70!black}] coordinates {(256,0.130196) (512,0.583911) (1024,1.965721) (2048,8.871304) (4096,45.235891) (8192,760.065685)};
+\addlegendentry{-O2, FastMath ON}
+\addplot+[orange, thick, solid, mark=*, mark options={draw=orange, fill=orange}] coordinates {(256,0.096738) (512,0.371951) (1024,1.508544) (2048,5.972048) (4096,30.865506) (8192,539.75357)};
+\addlegendentry{-O3, FastMath OFF}
+\addplot+[orange, thick, dashed, mark=*, mark options={draw=orange, fill=orange}] coordinates {(256,0.092561) (512,0.375632) (1024,2.335926) (2048,7.440605) (4096,34.708665) (8192,771.264649)};
+\addlegendentry{-O3, FastMath ON}
+\end{axis}
+\end{tikzpicture}
+
+\begin{tikzpicture}
+\begin{axis}[width=14cm,height=9cm,grid=both,xlabel={$N$},ylabel={Time [s]},title={Execution time vs N (versions: v1a, v1b) (T=2)},legend pos=north west,legend cell align=left,mark options={scale=0.9}]
+\addplot+[red, thick, solid, mark=*, mark options={draw=red, fill=red}] coordinates {(256,0.134039) (512,0.49738) (1024,1.946481) (2048,7.957713) (4096,34.753745) (8192,406.490154)};
+\addlegendentry{-O0, FastMath OFF}
+\addplot+[red, thick, dashed, mark=*, mark options={draw=red, fill=red}] coordinates {(256,0.133153) (512,0.577809) (1024,2.012398) (2048,7.963718) (4096,42.205397) (8192,386.338553)};
+\addlegendentry{-O0, FastMath ON}
+\addplot+[blue, thick, solid, mark=*, mark options={draw=blue, fill=blue}] coordinates {(256,0.066453) (512,0.269058) (1024,1.079687) (2048,4.303945) (4096,25.18383) (8192,397.62074)};
+\addlegendentry{-O1, FastMath OFF}
+\addplot+[blue, thick, dashed, mark=*, mark options={draw=blue, fill=blue}] coordinates {(256,0.082714) (512,0.289746) (1024,1.050231) (2048,4.143288) (4096,21.693756) (8192,361.925763)};
+\addlegendentry{-O1, FastMath ON}
+\addplot+[green!70!black, thick, solid, mark=*, mark options={draw=green!70!black, fill=green!70!black}] coordinates {(256,0.191522) (512,0.255601) (1024,1.027959) (2048,4.041407) (4096,28.452388) (8192,391.319959)};
+\addlegendentry{-O2, FastMath OFF}
+\addplot+[green!70!black, thick, dashed, mark=*, mark options={draw=green!70!black, fill=green!70!black}] coordinates {(256,0.080901) (512,0.253913) (1024,1.259675) (2048,4.384641) (4096,21.557311) (8192,406.828661)};
+\addlegendentry{-O2, FastMath ON}
+\addplot+[orange, thick, solid, mark=*, mark options={draw=orange, fill=orange}] coordinates {(256,0.048894) (512,0.209327) (1024,0.793504) (2048,6.786949) (4096,20.440833) (8192,353.794668)};
+\addlegendentry{-O3, FastMath OFF}
+\addplot+[orange, thick, dashed, mark=*, mark options={draw=orange, fill=orange}] coordinates {(256,0.065687) (512,0.194678) (1024,0.85786) (2048,3.287722) (4096,18.400929) (8192,408.334148)};
+\addlegendentry{-O3, FastMath ON}
+\end{axis}
+\end{tikzpicture}
+
+\begin{tikzpicture}
+\begin{axis}[width=14cm,height=9cm,grid=both,xlabel={$N$},ylabel={Time [s]},title={Execution time vs N (versions: v1a, v1b) (T=3)},legend pos=north west,legend cell align=left,mark options={scale=0.9}]
+\addplot+[red, thick, solid, mark=*, mark options={draw=red, fill=red}] coordinates {(256,0.115681) (512,0.290659) (1024,1.597985) (2048,4.692612) (4096,21.447551) (8192,235.712054)};
+\addlegendentry{-O0, FastMath OFF}
+\addplot+[red, thick, dashed, mark=*, mark options={draw=red, fill=red}] coordinates {(256,0.095412) (512,0.426817) (1024,1.670473) (2048,6.778597) (4096,27.851372) (8192,368.225088)};
+\addlegendentry{-O0, FastMath ON}
+\addplot+[blue, thick, solid, mark=*, mark options={draw=blue, fill=blue}] coordinates {(256,0.0845) (512,0.192253) (1024,0.814846) (2048,3.08064) (4096,19.966211) (8192,229.239577)};
+\addlegendentry{-O1, FastMath OFF}
+\addplot+[blue, thick, dashed, mark=*, mark options={draw=blue, fill=blue}] coordinates {(256,0.044728) (512,0.182165) (1024,0.727547) (2048,4.150385) (4096,13.101493) (8192,251.250126)};
+\addlegendentry{-O1, FastMath ON}
+\addplot+[green!70!black, thick, solid, mark=*, mark options={draw=green!70!black, fill=green!70!black}] coordinates {(256,0.086448) (512,0.288101) (1024,0.701334) (2048,2.744846) (4096,14.617956) (8192,233.509741)};
+\addlegendentry{-O2, FastMath OFF}
+\addplot+[green!70!black, thick, dashed, mark=*, mark options={draw=green!70!black, fill=green!70!black}] coordinates {(256,0.087496) (512,0.283646) (1024,0.726318) (2048,4.132536) (4096,17.462198) (8192,277.680218)};
+\addlegendentry{-O2, FastMath ON}
+\addplot+[orange, thick, solid, mark=*, mark options={draw=orange, fill=orange}] coordinates {(256,0.157347) (512,0.177052) (1024,0.620831) (2048,5.188536) (4096,12.069032) (8192,318.233816)};
+\addlegendentry{-O3, FastMath OFF}
+\addplot+[orange, thick, dashed, mark=*, mark options={draw=orange, fill=orange}] coordinates {(256,0.033067) (512,0.240757) (1024,0.881962) (2048,2.052714) (4096,22.089771) (8192,244.81112)};
+\addlegendentry{-O3, FastMath ON}
+\end{axis}
+\end{tikzpicture}
+
+\begin{tikzpicture}
+\begin{axis}[width=14cm,height=9cm,grid=both,xlabel={$N$},ylabel={Time [s]},title={Execution time vs N (versions: v1a, v1b) (T=4)},legend pos=north west,legend cell align=left,mark options={scale=0.9}]
+\addplot+[red, thick, solid, mark=*, mark options={draw=red, fill=red}] coordinates {(256,0.080957) (512,0.350287) (1024,3.162573) (2048,5.654152) (4096,25.306171) (8192,190.16402)};
+\addlegendentry{-O0, FastMath OFF}
+\addplot+[red, thick, dashed, mark=*, mark options={draw=red, fill=red}] coordinates {(256,0.108883) (512,0.664281) (1024,1.102254) (2048,5.55227) (4096,25.303246) (8192,264.684295)};
+\addlegendentry{-O0, FastMath ON}
+\addplot+[blue, thick, solid, mark=*, mark options={draw=blue, fill=blue}] coordinates {(256,0.035852) (512,0.242824) (1024,0.554937) (2048,2.215829) (4096,10.6666) (8192,206.751386)};
+\addlegendentry{-O1, FastMath OFF}
+\addplot+[blue, thick, dashed, mark=*, mark options={draw=blue, fill=blue}] coordinates {(256,0.034896) (512,0.142587) (1024,0.554609) (2048,2.185459) (4096,9.980913) (8192,179.302324)};
+\addlegendentry{-O1, FastMath ON}
+\addplot+[green!70!black, thick, solid, mark=*, mark options={draw=green!70!black, fill=green!70!black}] coordinates {(256,0.034766) (512,0.249688) (1024,0.53715) (2048,3.950532) (4096,18.428003) (8192,222.320648)};
+\addlegendentry{-O2, FastMath OFF}
+\addplot+[green!70!black, thick, dashed, mark=*, mark options={draw=green!70!black, fill=green!70!black}] coordinates {(256,0.082645) (512,0.133992) (1024,0.536177) (2048,3.600437) (4096,18.441994) (8192,215.660079)};
+\addlegendentry{-O2, FastMath ON}
+\addplot+[orange, thick, solid, mark=*, mark options={draw=orange, fill=orange}] coordinates {(256,0.09922) (512,0.106771) (1024,0.419208) (2048,1.620325) (4096,9.138277) (8192,152.989465)};
+\addlegendentry{-O3, FastMath OFF}
+\addplot+[orange, thick, dashed, mark=*, mark options={draw=orange, fill=orange}] coordinates {(256,0.027204) (512,0.17746) (1024,1.36827) (2048,1.574921) (4096,8.902509) (8192,167.364993)};
+\addlegendentry{-O3, FastMath ON}
+\end{axis}
+\end{tikzpicture}
+
+\begin{tikzpicture}
+\begin{axis}[width=14cm,height=9cm,grid=both,xlabel={$N$},ylabel={Time [s]},title={Execution time vs N (versions: v1a, v1b) (T=5)},legend pos=north west,legend cell align=left,mark options={scale=0.9}]
+\addplot+[red, thick, solid, mark=*, mark options={draw=red, fill=red}] coordinates {(256,0.08714) (512,0.327596) (1024,1.336639) (2048,5.168529) (4096,22.404219) (8192,355.486066)};
+\addlegendentry{-O0, FastMath OFF}
+\addplot+[red, thick, dashed, mark=*, mark options={draw=red, fill=red}] coordinates {(256,0.083976) (512,0.196641) (1024,1.144237) (2048,3.743419) (4096,21.506976) (8192,193.43897)};
+\addlegendentry{-O0, FastMath ON}
+\addplot+[blue, thick, solid, mark=*, mark options={draw=blue, fill=blue}] coordinates {(256,0.086361) (512,0.113186) (1024,0.442419) (2048,3.126233) (4096,8.803882) (8192,163.69688)};
+\addlegendentry{-O1, FastMath OFF}
+\addplot+[blue, thick, dashed, mark=*, mark options={draw=blue, fill=blue}] coordinates {(256,0.090994) (512,0.109477) (1024,0.437991) (2048,1.734164) (4096,15.024772) (8192,178.289746)};
+\addlegendentry{-O1, FastMath ON}
+\addplot+[green!70!black, thick, solid, mark=*, mark options={draw=green!70!black, fill=green!70!black}] coordinates {(256,0.03641) (512,0.108553) (1024,0.436139) (2048,4.061775) (4096,17.32402) (8192,143.996075)};
+\addlegendentry{-O2, FastMath OFF}
+\addplot+[green!70!black, thick, dashed, mark=*, mark options={draw=green!70!black, fill=green!70!black}] coordinates {(256,0.097976) (512,0.107549) (1024,0.429536) (2048,3.152001) (4096,9.386107) (8192,149.930593) (16384,797.489752)};
+\addlegendentry{-O2, FastMath ON}
+\addplot+[orange, thick, solid, mark=*, mark options={draw=orange, fill=orange}] coordinates {(256,0.109712) (512,0.084012) (1024,0.716714) (2048,1.488234) (4096,13.788951) (8192,133.849515) (16384,781.486129)};
+\addlegendentry{-O3, FastMath OFF}
+\addplot+[orange, thick, dashed, mark=*, mark options={draw=orange, fill=orange}] coordinates {(256,0.032629) (512,0.256115) (1024,0.732406) (2048,2.736069) (4096,7.451288) (8192,142.359038) (16384,807.298542)};
+\addlegendentry{-O3, FastMath ON}
+\end{axis}
+\end{tikzpicture}
+
+\begin{tikzpicture}
+\begin{axis}[width=14cm,height=9cm,grid=both,xlabel={$N$},ylabel={Time [s]},title={Execution time vs N (versions: v1a, v1b) (T=6)},legend pos=north west,legend cell align=left,mark options={scale=0.9}]
+\addplot+[red, thick, solid, mark=*, mark options={draw=red, fill=red}] coordinates {(256,0.068906) (512,0.290207) (1024,1.282587) (2048,4.078189) (4096,19.066315) (8192,216.818206)};
+\addlegendentry{-O0, FastMath OFF}
+\addplot+[red, thick, dashed, mark=*, mark options={draw=red, fill=red}] coordinates {(256,0.090312) (512,0.791545) (1024,1.143442) (2048,10.459684) (4096,21.036774) (8192,128.667315) (16384,775.627956)};
+\addlegendentry{-O0, FastMath ON}
+\addplot+[blue, thick, solid, mark=*, mark options={draw=blue, fill=blue}] coordinates {(256,0.098176) (512,0.208026) (1024,0.373483) (2048,1.50118) (4096,8.40867) (8192,144.877526) (16384,775.853905)};
+\addlegendentry{-O1, FastMath OFF}
+\addplot+[blue, thick, dashed, mark=*, mark options={draw=blue, fill=blue}] coordinates {(256,0.108905) (512,0.093698) (1024,0.750029) (2048,2.984519) (4096,14.497032) (8192,138.793931) (16384,825.360673)};
+\addlegendentry{-O1, FastMath ON}
+\addplot+[green!70!black, thick, solid, mark=*, mark options={draw=green!70!black, fill=green!70!black}] coordinates {(256,0.096621) (512,0.206766) (1024,0.368578) (2048,2.760683) (4096,8.069111) (8192,162.013602) (16384,755.349157)};
+\addlegendentry{-O2, FastMath OFF}
+\addplot+[green!70!black, thick, dashed, mark=*, mark options={draw=green!70!black, fill=green!70!black}] coordinates {(256,0.029738) (512,0.221429) (1024,0.747951) (2048,2.966824) (4096,14.89897) (8192,119.960716) (16384,689.01935)};
+\addlegendentry{-O2, FastMath ON}
+\addplot+[orange, thick, solid, mark=*, mark options={draw=orange, fill=orange}] coordinates {(256,0.110211) (512,0.073916) (1024,0.856215) (2048,2.402741) (4096,5.753497) (8192,120.086743) (16384,668.912868)};
+\addlegendentry{-O3, FastMath OFF}
+\addplot+[orange, thick, dashed, mark=*, mark options={draw=orange, fill=orange}] coordinates {(256,0.032524) (512,0.239299) (1024,0.82151) (2048,1.129079) (4096,12.711856) (8192,120.522335) (16384,828.512489)};
+\addlegendentry{-O3, FastMath ON}
+\end{axis}
+\end{tikzpicture}
+
+\begin{tikzpicture}
+\begin{axis}[width=14cm,height=9cm,grid=both,xlabel={$N$},ylabel={Time [s]},title={Execution time vs N (versions: v1a, v1b) (T=7)},legend pos=north west,legend cell align=left,mark options={scale=0.9}]
+\addplot+[red, thick, solid, mark=*, mark options={draw=red, fill=red}] coordinates {(256,0.057013) (512,0.264179) (1024,2.32923) (2048,4.228138) (4096,18.846843) (8192,200.750355) (16384,693.857247)};
+\addlegendentry{-O0, FastMath OFF}
+\addplot+[red, thick, dashed, mark=*, mark options={draw=red, fill=red}] coordinates {(256,0.07835) (512,0.282911) (1024,2.344165) (2048,3.548827) (4096,13.143619) (8192,127.008823) (16384,772.488079)};
+\addlegendentry{-O0, FastMath ON}
+\addplot+[blue, thick, solid, mark=*, mark options={draw=blue, fill=blue}] coordinates {(256,0.028939) (512,0.082281) (1024,0.335977) (2048,2.663379) (4096,6.433007) (8192,106.104778) (16384,656.3389)};
+\addlegendentry{-O1, FastMath OFF}
+\addplot+[blue, thick, dashed, mark=*, mark options={draw=blue, fill=blue}] coordinates {(256,0.121202) (512,0.338414) (1024,0.837971) (2048,2.780393) (4096,13.845898) (8192,155.920417) (16384,750.779542)};
+\addlegendentry{-O1, FastMath ON}
+\addplot+[green!70!black, thick, solid, mark=*, mark options={draw=green!70!black, fill=green!70!black}] coordinates {(256,0.16177) (512,0.276589) (1024,0.309827) (2048,1.236965) (4096,13.184559) (8192,117.031717) (16384,661.479808)};
+\addlegendentry{-O2, FastMath OFF}
+\addplot+[green!70!black, thick, dashed, mark=*, mark options={draw=green!70!black, fill=green!70!black}] coordinates {(256,0.118112) (512,0.278828) (1024,0.710504) (2048,1.588209) (4096,11.817701) (8192,103.40068) (16384,690.963747)};
+\addlegendentry{-O2, FastMath ON}
+\addplot+[orange, thick, solid, mark=*, mark options={draw=orange, fill=orange}] coordinates {(256,0.133353) (512,0.065114) (1024,0.839511) (2048,0.975935) (4096,10.370113) (8192,102.984549) (16384,724.404846)};
+\addlegendentry{-O3, FastMath OFF}
+\addplot+[orange, thick, dashed, mark=*, mark options={draw=orange, fill=orange}] coordinates {(256,0.030973) (512,0.06336) (1024,0.245156) (2048,3.868484) (4096,14.61434) (8192,124.520132) (16384,600.43213)};
+\addlegendentry{-O3, FastMath ON}
+\end{axis}
+\end{tikzpicture}
+
+\begin{tikzpicture}
+\begin{axis}[width=14cm,height=9cm,grid=both,xlabel={$N$},ylabel={Time [s]},title={Execution time vs N (versions: v1a, v1b) (T=8)},legend pos=north west,legend cell align=left,mark options={scale=0.9}]
+\addplot+[red, thick, solid, mark=*, mark options={draw=red, fill=red}] coordinates {(256,0.078284) (512,0.228587) (1024,0.584395) (2048,3.483648) (4096,8.312512) (8192,116.456006) (16384,698.956143)};
+\addlegendentry{-O0, FastMath OFF}
+\addplot+[red, thick, dashed, mark=*, mark options={draw=red, fill=red}] coordinates {(256,0.077397) (512,0.276989) (1024,2.690739) (2048,4.091868) (4096,17.787499) (8192,104.038072) (16384,658.50969)};
+\addlegendentry{-O0, FastMath ON}
+\addplot+[blue, thick, solid, mark=*, mark options={draw=blue, fill=blue}] coordinates {(256,0.02247) (512,0.074077) (1024,0.290977) (2048,2.444631) (4096,8.281137) (8192,130.850183) (16384,616.884266)};
+\addlegendentry{-O1, FastMath OFF}
+\addplot+[blue, thick, dashed, mark=*, mark options={draw=blue, fill=blue}] coordinates {(256,0.023339) (512,0.078066) (1024,0.706304) (2048,1.137276) (4096,5.681087) (8192,105.431932) (16384,668.547504)};
+\addlegendentry{-O1, FastMath ON}
+\addplot+[green!70!black, thick, solid, mark=*, mark options={draw=green!70!black, fill=green!70!black}] coordinates {(256,0.031219) (512,0.324981) (1024,0.315901) (2048,1.212822) (4096,12.583028) (8192,122.839955) (16384,734.031352)};
+\addlegendentry{-O2, FastMath OFF}
+\addplot+[green!70!black, thick, dashed, mark=*, mark options={draw=green!70!black, fill=green!70!black}] coordinates {(256,0.135782) (512,0.086573) (1024,0.287101) (2048,1.155343) (4096,6.146815) (8192,90.919321) (16384,598.117945)};
+\addlegendentry{-O2, FastMath ON}
+\addplot+[orange, thick, solid, mark=*, mark options={draw=orange, fill=orange}] coordinates {(256,0.134514) (512,0.065061) (1024,0.818623) (2048,0.994234) (4096,6.314571) (8192,134.450734) (16384,752.637275)};
+\addlegendentry{-O3, FastMath OFF}
+\addplot+[orange, thick, dashed, mark=*, mark options={draw=orange, fill=orange}] coordinates {(256,0.271845) (512,0.481354) (1024,1.194568) (2048,3.036065) (4096,5.005061) (8192,120.569255) (16384,608.347591)};
+\addlegendentry{-O3, FastMath ON}
+\end{axis}
+\end{tikzpicture}
+
+\begin{tikzpicture}
+\begin{axis}[width=14cm,height=9cm,grid=both,xlabel={$N$},ylabel={Time [s]},title={Execution time vs N (versions: v1a, v1b) (T=9)},legend pos=north west,legend cell align=left,mark options={scale=0.9}]
+\addplot+[red, thick, solid, mark=*, mark options={draw=red, fill=red}] coordinates {(256,0.088722) (512,0.242377) (1024,0.914893) (2048,7.124755) (4096,16.134061) (8192,113.091042) (16384,799.296715)};
+\addlegendentry{-O0, FastMath OFF}
+\addplot+[red, thick, dashed, mark=*, mark options={draw=red, fill=red}] coordinates {(256,0.12) (512,0.530267) (1024,1.91808) (2048,3.576818) (4096,16.269452) (8192,117.810184) (16384,530.99278)};
+\addlegendentry{-O0, FastMath ON}
+\addplot+[blue, thick, solid, mark=*, mark options={draw=blue, fill=blue}] coordinates {(256,0.198709) (512,0.077833) (1024,0.668679) (2048,2.643148) (4096,5.527579) (8192,94.680221) (16384,561.330597)};
+\addlegendentry{-O1, FastMath OFF}
+\addplot+[blue, thick, dashed, mark=*, mark options={draw=blue, fill=blue}] coordinates {(256,0.138727) (512,0.313468) (1024,0.260292) (2048,2.896016) (4096,4.997638) (8192,131.539795) (16384,470.437514)};
+\addlegendentry{-O1, FastMath ON}
+\addplot+[green!70!black, thick, solid, mark=*, mark options={draw=green!70!black, fill=green!70!black}] coordinates {(256,0.149755) (512,0.282855) (1024,0.64975) (2048,2.347225) (4096,10.995719) (8192,80.449398) (16384,514.829962)};
+\addlegendentry{-O2, FastMath OFF}
+\addplot+[green!70!black, thick, dashed, mark=*, mark options={draw=green!70!black, fill=green!70!black}] coordinates {(256,0.148094) (512,0.072174) (1024,0.252286) (2048,2.505212) (4096,5.226364) (8192,85.030914) (16384,508.878738)};
+\addlegendentry{-O2, FastMath ON}
+\addplot+[orange, thick, solid, mark=*, mark options={draw=orange, fill=orange}] coordinates {(256,0.024689) (512,0.346857) (1024,0.22577) (2048,0.904417) (4096,5.447609) (8192,105.783072) (16384,471.596283)};
+\addlegendentry{-O3, FastMath OFF}
+\addplot+[orange, thick, dashed, mark=*, mark options={draw=orange, fill=orange}] coordinates {(256,0.218804) (512,0.075147) (1024,1.091613) (2048,0.781368) (4096,4.703168) (8192,83.171426) (16384,547.015908)};
+\addlegendentry{-O3, FastMath ON}
+\end{axis}
+\end{tikzpicture}
+
+\begin{tikzpicture}
+\begin{axis}[width=14cm,height=9cm,grid=both,xlabel={$N$},ylabel={Time [s]},title={Execution time vs N (versions: v1a, v1b) (T=10)},legend pos=north west,legend cell align=left,mark options={scale=0.9}]
+\addplot+[red, thick, solid, mark=*, mark options={draw=red, fill=red}] coordinates {(256,0.050207) (512,0.207288) (1024,0.806417) (2048,3.247234) (4096,12.126132) (8192,86.671036) (16384,568.835653)};
+\addlegendentry{-O0, FastMath OFF}
+\addplot+[red, thick, dashed, mark=*, mark options={draw=red, fill=red}] coordinates {(256,0.11669) (512,0.170989) (1024,0.767053) (2048,3.994996) (4096,14.334304) (8192,138.508261) (16384,650.317637)};
+\addlegendentry{-O0, FastMath ON}
+\addplot+[blue, thick, solid, mark=*, mark options={draw=blue, fill=blue}] coordinates {(256,0.186213) (512,0.331725) (1024,0.228169) (2048,0.949028) (4096,5.235414) (8192,82.708471) (16384,509.71107)};
+\addlegendentry{-O1, FastMath OFF}
+\addplot+[blue, thick, dashed, mark=*, mark options={draw=blue, fill=blue}] coordinates {(256,0.151375) (512,0.317816) (1024,0.615603) (2048,2.328375) (4096,11.245491) (8192,88.294434) (16384,561.958162)};
+\addlegendentry{-O1, FastMath ON}
+\addplot+[green!70!black, thick, solid, mark=*, mark options={draw=green!70!black, fill=green!70!black}] coordinates {(256,0.170924) (512,0.080002) (1024,0.781071) (2048,1.081608) (4096,10.400087) (8192,72.041131) (16384,472.15091)};
+\addlegendentry{-O2, FastMath OFF}
+\addplot+[green!70!black, thick, dashed, mark=*, mark options={draw=green!70!black, fill=green!70!black}] coordinates {(256,0.024644) (512,0.333204) (1024,0.228426) (2048,0.876489) (4096,5.693251) (8192,73.41209) (16384,622.743132)};
+\addlegendentry{-O2, FastMath ON}
+\addplot+[orange, thick, solid, mark=*, mark options={draw=orange, fill=orange}] coordinates {(256,0.022179) (512,0.063803) (1024,1.03633) (2048,2.37312) (4096,4.454752) (8192,68.737418) (16384,438.774291)};
+\addlegendentry{-O3, FastMath OFF}
+\addplot+[orange, thick, dashed, mark=*, mark options={draw=orange, fill=orange}] coordinates {(256,0.0296) (512,0.064336) (1024,1.066814) (2048,2.963301) (4096,12.482958) (8192,81.265379) (16384,602.191031)};
+\addlegendentry{-O3, FastMath ON}
+\end{axis}
+\end{tikzpicture}
+
+\begin{tikzpicture}
+\begin{axis}[width=14cm,height=9cm,grid=both,xlabel={$N$},ylabel={Time [s]},title={Execution time vs N (versions: v1a, v1b) (T=20)},legend pos=north west,legend cell align=left,mark options={scale=0.9}]
+\addplot+[red, thick, solid, mark=*, mark options={draw=red, fill=red}] coordinates {(256,0.056239) (512,0.680343) (1024,0.643091) (2048,5.100388) (4096,10.501283) (8192,47.756815) (16384,257.756602)};
+\addlegendentry{-O0, FastMath OFF}
+\addplot+[red, thick, dashed, mark=*, mark options={draw=red, fill=red}] coordinates {(256,0.363933) (512,0.130535) (1024,0.476573) (2048,2.721251) (4096,12.501939) (8192,80.739602) (16384,326.745291)};
+\addlegendentry{-O0, FastMath ON}
+\addplot+[blue, thick, solid, mark=*, mark options={draw=blue, fill=blue}] coordinates {(256,0.02389) (512,0.683493) (1024,1.099287) (2048,2.464046) (4096,4.288266) (8192,59.094069) (16384,356.190631)};
+\addlegendentry{-O1, FastMath OFF}
+\addplot+[blue, thick, dashed, mark=*, mark options={draw=blue, fill=blue}] coordinates {(256,0.024094) (512,0.670117) (1024,0.156272) (2048,2.819756) (4096,8.398244) (8192,52.854257) (16384,380.454551)};
+\addlegendentry{-O1, FastMath ON}
+\addplot+[green!70!black, thick, solid, mark=*, mark options={draw=green!70!black, fill=green!70!black}] coordinates {(256,0.362508) (512,0.051116) (1024,1.07259) (2048,0.57692) (4096,7.356731) (8192,45.85542) (16384,219.361988)};
+\addlegendentry{-O2, FastMath OFF}
+\addplot+[green!70!black, thick, dashed, mark=*, mark options={draw=green!70!black, fill=green!70!black}] coordinates {(256,0.021471) (512,0.051429) (1024,1.046343) (2048,2.408544) (4096,4.760823) (8192,64.130651) (16384,232.401295)};
+\addlegendentry{-O2, FastMath ON}
+\addplot+[orange, thick, solid, mark=*, mark options={draw=orange, fill=orange}] coordinates {(256,0.022442) (512,0.655913) (1024,0.14197) (2048,0.648283) (4096,4.287283) (8192,43.828853) (16384,400.547777)};
+\addlegendentry{-O3, FastMath OFF}
+\addplot+[orange, thick, dashed, mark=*, mark options={draw=orange, fill=orange}] coordinates {(256,0.019829) (512,0.053685) (1024,1.436381) (2048,0.443557) (4096,10.985834) (8192,62.332076) (16384,208.148355)};
+\addlegendentry{-O3, FastMath ON}
+\end{axis}
+\end{tikzpicture}
+
+\begin{tikzpicture}
+\begin{axis}[width=14cm,height=9cm,grid=both,xlabel={$N$},ylabel={Time [s]},title={Execution time vs N (versions: v1a, v1b) (T=40)},legend pos=north west,legend cell align=left,mark options={scale=0.9}]
+\addplot+[red, thick, solid, mark=*, mark options={draw=red, fill=red}] coordinates {(256,0.057306) (512,0.596136) (1024,0.70921) (2048,2.952009) (4096,7.005174) (8192,82.886203) (16384,172.725558)};
+\addlegendentry{-O0, FastMath OFF}
+\addplot+[red, thick, dashed, mark=*, mark options={draw=red, fill=red}] coordinates {(256,0.039374) (512,0.125396) (1024,0.870779) (2048,1.412732) (4096,7.750158) (8192,79.123897) (16384,240.386729)};
+\addlegendentry{-O0, FastMath ON}
+\addplot+[blue, thick, solid, mark=*, mark options={draw=blue, fill=blue}] coordinates {(256,0.030372) (512,1.380414) (1024,2.719594) (2048,0.56469) (4096,4.000121) (8192,32.741897) (16384,197.691472)};
+\addlegendentry{-O1, FastMath OFF}
+\addplot+[blue, thick, dashed, mark=*, mark options={draw=blue, fill=blue}] coordinates {(256,0.025431) (512,0.098332) (1024,0.146937) (2048,0.415712) (4096,4.285884) (8192,49.849408) (16384,136.78925)};
+\addlegendentry{-O1, FastMath ON}
+\addplot+[green!70!black, thick, solid, mark=*, mark options={draw=green!70!black, fill=green!70!black}] coordinates {(256,0.958389) (512,1.40773) (1024,0.130958) (2048,4.475922) (4096,10.195811) (8192,43.017328) (16384,215.044679)};
+\addlegendentry{-O2, FastMath OFF}
+\addplot+[green!70!black, thick, dashed, mark=*, mark options={draw=green!70!black, fill=green!70!black}] coordinates {(256,0.082236) (512,1.710061) (1024,0.453269) (2048,0.915356) (4096,9.813447) (8192,59.171963) (16384,152.736)};
+\addlegendentry{-O2, FastMath ON}
+\addplot+[orange, thick, solid, mark=*, mark options={draw=orange, fill=orange}] coordinates {(256,0.865009) (512,0.432507) (1024,0.185399) (2048,1.014331) (4096,12.029493) (8192,45.157237) (16384,137.230571)};
+\addlegendentry{-O3, FastMath OFF}
+\addplot+[orange, thick, dashed, mark=*, mark options={draw=orange, fill=orange}] coordinates {(256,0.797946) (512,1.533509) (1024,0.121234) (2048,0.391545) (4096,3.861964) (8192,43.498157) (16384,142.301279)};
+\addlegendentry{-O3, FastMath ON}
+\end{axis}
+\end{tikzpicture}
+
+\begin{tikzpicture}
+\begin{axis}[width=14cm,height=9cm,grid=both,xlabel={$N$},ylabel={Time [s]},title={Execution time vs N (versions: v1a, v1b) (T=60)},legend pos=north west,legend cell align=left,mark options={scale=0.9}]
+\addplot+[red, thick, solid, mark=*, mark options={draw=red, fill=red}] coordinates {(256,0.496964) (512,2.262968) (1024,5.511558) (2048,1.965346) (4096,8.167597) (8192,24.018137) (16384,201.188126)};
+\addlegendentry{-O0, FastMath OFF}
+\addplot+[red, thick, dashed, mark=*, mark options={draw=red, fill=red}] coordinates {(256,0.139742) (512,2.518931) (1024,0.370463) (2048,7.804891) (4096,8.640749) (8192,23.262463) (16384,178.137311)};
+\addlegendentry{-O0, FastMath ON}
+\addplot+[blue, thick, solid, mark=*, mark options={draw=blue, fill=blue}] coordinates {(256,1.397929) (512,0.449159) (1024,0.30475) (2048,7.108332) (4096,3.945717) (8192,32.863251) (16384,142.022634)};
+\addlegendentry{-O1, FastMath OFF}
+\addplot+[blue, thick, dashed, mark=*, mark options={draw=blue, fill=blue}] coordinates {(256,0.359109) (512,3.91799) (1024,6.739757) (2048,11.491417) (4096,3.659334) (8192,27.020404) (16384,120.316885)};
+\addlegendentry{-O1, FastMath ON}
+\addplot+[green!70!black, thick, solid, mark=*, mark options={draw=green!70!black, fill=green!70!black}] coordinates {(256,0.030019) (512,3.143987) (1024,4.772094) (2048,13.828327) (4096,4.447823) (8192,56.085668) (16384,118.920973)};
+\addlegendentry{-O2, FastMath OFF}
+\addplot+[green!70!black, thick, dashed, mark=*, mark options={draw=green!70!black, fill=green!70!black}] coordinates {(256,0.102951) (512,0.12655) (1024,0.211091) (2048,13.280767) (4096,4.224425) (8192,36.911049) (16384,115.866438)};
+\addlegendentry{-O2, FastMath ON}
+\addplot+[orange, thick, solid, mark=*, mark options={draw=orange, fill=orange}] coordinates {(256,0.391992) (512,0.415905) (1024,0.540898) (2048,11.702913) (4096,15.49876) (8192,41.420315) (16384,121.759278)};
+\addlegendentry{-O3, FastMath OFF}
+\addplot+[orange, thick, dashed, mark=*, mark options={draw=orange, fill=orange}] coordinates {(256,0.159364) (512,2.783358) (1024,4.885779) (2048,0.668246) (4096,15.196816) (8192,32.85413) (16384,127.840938)};
+\addlegendentry{-O3, FastMath ON}
+\end{axis}
+\end{tikzpicture}
+
+\begin{tikzpicture}
+\begin{axis}[width=14cm,height=9cm,grid=both,xlabel={$N$},ylabel={Time [s]},title={Execution time vs N (versions: v1a, v1b) (T=80)},legend pos=north west,legend cell align=left,mark options={scale=0.9}]
+\addplot+[red, thick, solid, mark=*, mark options={draw=red, fill=red}] coordinates {(256,2.791476) (512,0.490119) (1024,11.123081) (2048,13.696975) (4096,13.048231) (8192,22.549605) (16384,110.065124)};
+\addlegendentry{-O0, FastMath OFF}
+\addplot+[red, thick, dashed, mark=*, mark options={draw=red, fill=red}] coordinates {(256,1.992933) (512,4.878829) (1024,0.403442) (2048,13.792647) (4096,5.353865) (8192,40.279103) (16384,140.116988)};
+\addlegendentry{-O0, FastMath ON}
+\addplot+[blue, thick, solid, mark=*, mark options={draw=blue, fill=blue}] coordinates {(256,0.079173) (512,4.836138) (1024,0.208629) (2048,13.281964) (4096,3.95336) (8192,44.192441) (16384,114.994392)};
+\addlegendentry{-O1, FastMath OFF}
+\addplot+[blue, thick, dashed, mark=*, mark options={draw=blue, fill=blue}] coordinates {(256,1.8933) (512,0.235493) (1024,11.350563) (2048,12.761266) (4096,4.753716) (8192,28.603746) (16384,102.656915)};
+\addlegendentry{-O1, FastMath ON}
+\addplot+[green!70!black, thick, solid, mark=*, mark options={draw=green!70!black, fill=green!70!black}] coordinates {(256,0.233598) (512,4.164012) (1024,8.608912) (2048,16.608298) (4096,34.862111) (8192,57.703715) (16384,125.790226)};
+\addlegendentry{-O2, FastMath OFF}
+\addplot+[green!70!black, thick, dashed, mark=*, mark options={draw=green!70!black, fill=green!70!black}] coordinates {(256,2.103096) (512,0.477641) (1024,0.586435) (2048,0.75352) (4096,21.43918) (8192,33.994111) (16384,144.538766)};
+\addlegendentry{-O2, FastMath ON}
+\addplot+[orange, thick, solid, mark=*, mark options={draw=orange, fill=orange}] coordinates {(256,0.429107) (512,5.084454) (1024,0.228771) (2048,0.476421) (4096,35.996597) (8192,28.565397) (16384,160.788808)};
+\addlegendentry{-O3, FastMath OFF}
+\addplot+[orange, thick, dashed, mark=*, mark options={draw=orange, fill=orange}] coordinates {(256,0.153931) (512,0.475502) (1024,0.285422) (2048,12.398088) (4096,20.136985) (8192,30.533607) (16384,124.1779)};
+\addlegendentry{-O3, FastMath ON}
+\end{axis}
+\end{tikzpicture}
+
+\begin{tikzpicture}
+\begin{axis}[width=14cm,height=9cm,grid=both,xlabel={$N$},ylabel={Time [s]},title={Execution time vs N (versions: v1a, v1b) (T=100)},legend pos=north west,legend cell align=left,mark options={scale=0.9}]
+\addplot+[red, thick, solid, mark=*, mark options={draw=red, fill=red}] coordinates {(256,2.821637) (512,0.263168) (1024,0.422361) (2048,22.970843) (4096,8.633402) (8192,35.837897) (16384,92.828544)};
+\addlegendentry{-O0, FastMath OFF}
+\addplot+[red, thick, dashed, mark=*, mark options={draw=red, fill=red}] coordinates {(256,0.449768) (512,0.162142) (1024,13.538257) (2048,0.87571) (4096,4.53683) (8192,33.89245) (16384,91.196471)};
+\addlegendentry{-O0, FastMath ON}
+\addplot+[blue, thick, solid, mark=*, mark options={draw=blue, fill=blue}] coordinates {(256,3.259333) (512,0.408539) (1024,14.553326) (2048,25.455341) (4096,3.078365) (8192,24.25485) (16384,156.340422)};
+\addlegendentry{-O1, FastMath OFF}
+\addplot+[blue, thick, dashed, mark=*, mark options={draw=blue, fill=blue}] coordinates {(256,3.902557) (512,0.24388) (1024,0.383955) (2048,28.23836) (4096,3.197487) (8192,72.172539) (16384,176.654264)};
+\addlegendentry{-O1, FastMath ON}
+\addplot+[green!70!black, thick, solid, mark=*, mark options={draw=green!70!black, fill=green!70!black}] coordinates {(256,3.42235) (512,6.579993) (1024,13.560957) (2048,25.478359) (4096,53.023741) (8192,24.55031) (16384,169.43385)};
+\addlegendentry{-O2, FastMath OFF}
+\addplot+[green!70!black, thick, dashed, mark=*, mark options={draw=green!70!black, fill=green!70!black}] coordinates {(256,0.515032) (512,0.451244) (1024,13.225889) (2048,0.837294) (4096,3.886618) (8192,64.285405) (16384,122.635926)};
+\addlegendentry{-O2, FastMath ON}
+\addplot+[orange, thick, solid, mark=*, mark options={draw=orange, fill=orange}] coordinates {(256,0.521791) (512,6.299588) (1024,0.384212) (2048,0.876656) (4096,41.874861) (8192,56.400951) (16384,107.7889)};
+\addlegendentry{-O3, FastMath OFF}
+\addplot+[orange, thick, dashed, mark=*, mark options={draw=orange, fill=orange}] coordinates {(256,0.447397) (512,5.660625) (1024,0.58905) (2048,0.551643) (4096,3.462103) (8192,85.310754) (16384,193.516201)};
+\addlegendentry{-O3, FastMath ON}
+\end{axis}
+\end{tikzpicture}
+
+\begin{tikzpicture}
+\begin{axis}[width=14cm,height=9cm,grid=both,xlabel={$N$},ylabel={Time [s]},title={Execution time vs N (versions: v1a, v1b) (T=120)},legend pos=north west,legend cell align=left,mark options={scale=0.9}]
+\addplot+[red, thick, solid, mark=*, mark options={draw=red, fill=red}] coordinates {(256,4.149641) (512,0.451434) (1024,0.436642) (2048,34.540025) (4096,65.892566) (8192,27.642221) (16384,85.155133)};
+\addlegendentry{-O0, FastMath OFF}
+\addplot+[red, thick, dashed, mark=*, mark options={draw=red, fill=red}] coordinates {(256,4.065372) (512,0.387951) (1024,0.400923) (2048,35.146778) (4096,4.454869) (8192,28.575827) (16384,80.381489)};
+\addlegendentry{-O0, FastMath ON}
+\addplot+[blue, thick, solid, mark=*, mark options={draw=blue, fill=blue}] coordinates {(256,0.471319) (512,8.869587) (1024,18.280316) (2048,35.826537) (4096,3.050548) (8192,123.75938) (16384,110.943251)};
+\addlegendentry{-O1, FastMath OFF}
+\addplot+[blue, thick, dashed, mark=*, mark options={draw=blue, fill=blue}] coordinates {(256,4.310036) (512,8.772496) (1024,17.7213) (2048,37.25506) (4096,3.826416) (8192,26.266743) (16384,215.251757)};
+\addlegendentry{-O1, FastMath ON}
+\addplot+[green!70!black, thick, solid, mark=*, mark options={draw=green!70!black, fill=green!70!black}] coordinates {(256,0.355809) (512,0.504926) (1024,0.585096) (2048,0.740001) (4096,66.072031) (8192,27.833234) (16384,119.340756)};
+\addlegendentry{-O2, FastMath OFF}
+\addplot+[green!70!black, thick, dashed, mark=*, mark options={draw=green!70!black, fill=green!70!black}] coordinates {(256,4.133114) (512,0.478928) (1024,17.799737) (2048,32.693608) (4096,45.635091) (8192,101.661614) (16384,193.035865)};
+\addlegendentry{-O2, FastMath ON}
+\addplot+[orange, thick, solid, mark=*, mark options={draw=orange, fill=orange}] coordinates {(256,0.493972) (512,8.413937) (1024,0.56145) (2048,0.766724) (4096,3.298007) (8192,27.225984) (16384,101.434972)};
+\addlegendentry{-O3, FastMath OFF}
+\addplot+[orange, thick, dashed, mark=*, mark options={draw=orange, fill=orange}] coordinates {(256,0.49301) (512,0.262546) (1024,0.538267) (2048,36.357896) (4096,72.253269) (8192,125.691533) (16384,116.350434)};
+\addlegendentry{-O3, FastMath ON}
+\end{axis}
+\end{tikzpicture}
+
+\begin{tikzpicture}
+\begin{axis}[width=14cm,height=9cm,grid=both,xlabel={$N$},ylabel={Time [s]},title={Execution time vs N (versions: v1a, v1b) (T=140)},legend pos=north west,legend cell align=left,mark options={scale=0.9}]
+\addplot+[red, thick, solid, mark=*, mark options={draw=red, fill=red}] coordinates {(256,0.471582) (512,0.353275) (1024,0.667793) (2048,0.924871) (4096,83.454052) (8192,28.308223) (16384,121.941497)};
+\addlegendentry{-O0, FastMath OFF}
+\addplot+[red, thick, dashed, mark=*, mark options={draw=red, fill=red}] coordinates {(256,0.476073) (512,11.054639) (1024,22.759743) (2048,43.165156) (4096,4.343183) (8192,28.011577) (16384,88.64215)};
+\addlegendentry{-O0, FastMath ON}
+\addplot+[blue, thick, solid, mark=*, mark options={draw=blue, fill=blue}] coordinates {(256,4.629843) (512,10.569157) (1024,19.785691) (2048,0.68095) (4096,2.558837) (8192,143.062324) (16384,209.850638)};
+\addlegendentry{-O1, FastMath OFF}
+\addplot+[blue, thick, dashed, mark=*, mark options={draw=blue, fill=blue}] coordinates {(256,0.526508) (512,10.953254) (1024,0.632534) (2048,39.699066) (4096,87.849918) (8192,147.225548) (16384,125.351762)};
+\addlegendentry{-O1, FastMath ON}
+\addplot+[green!70!black, thick, solid, mark=*, mark options={draw=green!70!black, fill=green!70!black}] coordinates {(256,4.811513) (512,0.505816) (1024,21.337471) (2048,0.898092) (4096,78.539851) (8192,148.810822) (16384,233.776434)};
+\addlegendentry{-O2, FastMath OFF}
+\addplot+[green!70!black, thick, dashed, mark=*, mark options={draw=green!70!black, fill=green!70!black}] coordinates {(256,5.273272) (512,0.505197) (1024,0.638231) (2048,44.292581) (4096,84.06125) (8192,162.375381) (16384,261.372966)};
+\addlegendentry{-O2, FastMath ON}
+\addplot+[orange, thick, solid, mark=*, mark options={draw=orange, fill=orange}] coordinates {(256,5.304207) (512,0.446529) (1024,0.495762) (2048,0.828359) (4096,86.500877) (8192,162.268017) (16384,234.038659)};
+\addlegendentry{-O3, FastMath OFF}
+\addplot+[orange, thick, dashed, mark=*, mark options={draw=orange, fill=orange}] coordinates {(256,5.707513) (512,10.25375) (1024,0.412667) (2048,0.813746) (4096,84.434813) (8192,157.571375) (16384,111.311533)};
+\addlegendentry{-O3, FastMath ON}
+\end{axis}
+\end{tikzpicture}
+

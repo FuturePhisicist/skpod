@@ -1,0 +1,84 @@
+\documentclass[tikz,border=6pt]{standalone}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\begin{document}
+
+\begin{tikzpicture}
+\begin{axis}[width=14cm,height=9cm,grid=both,xlabel={$N$},ylabel={Time [s]},title={Execution time vs N (v1a, O2, FastMath ON)},legend pos=north west,legend cell align=left,cycle list name=color list,mark options={scale=0.9}]
+\addplot+[thick, mark=*] coordinates {(256,0.130196) (512,0.487168) (1024,1.965721) (2048,8.151053) (4096,45.235891)};
+\addlegendentry{T=1}
+\addplot+[thick, mark=*] coordinates {(256,0.062821) (512,0.253913) (1024,1.034541) (2048,4.16776) (4096,21.557311) (8192,406.828661)};
+\addlegendentry{T=2}
+\addplot+[thick, mark=*] coordinates {(256,0.044097) (512,0.182566) (1024,0.726318) (2048,2.865664) (4096,17.462198) (8192,277.680218)};
+\addlegendentry{T=3}
+\addplot+[thick, mark=*] coordinates {(256,0.035597) (512,0.133992) (1024,0.536177) (2048,2.132156) (4096,11.384836) (8192,215.660079)};
+\addlegendentry{T=4}
+\addplot+[thick, mark=*] coordinates {(256,0.035605) (512,0.107549) (1024,0.429536) (2048,1.700586) (4096,9.386107) (8192,149.930593)};
+\addlegendentry{T=5}
+\addplot+[thick, mark=*] coordinates {(256,0.029738) (512,0.093863) (1024,0.36571) (2048,1.560648) (4096,8.415162) (8192,142.092458)};
+\addlegendentry{T=6}
+\addplot+[thick, mark=*] coordinates {(256,0.033082) (512,0.095586) (1024,0.435248) (2048,1.588209) (4096,11.817701) (8192,156.363134) (16384,690.963747)};
+\addlegendentry{T=7}
+\addplot+[thick, mark=*] coordinates {(256,0.038667) (512,0.086573) (1024,0.287101) (2048,1.155343) (4096,6.146815) (8192,125.226889) (16384,737.039967)};
+\addlegendentry{T=8}
+\addplot+[thick, mark=*] coordinates {(256,0.030497) (512,0.072174) (1024,0.252286) (2048,1.011331) (4096,5.226364) (8192,85.030914) (16384,524.11277)};
+\addlegendentry{T=9}
+\addplot+[thick, mark=*] coordinates {(256,0.024644) (512,0.081315) (1024,0.228426) (2048,0.876489) (4096,5.693251) (8192,99.420639) (16384,622.743132)};
+\addlegendentry{T=10}
+\addplot+[thick, mark=*] coordinates {(256,0.021471) (512,0.051429) (1024,0.134592) (2048,0.663149) (4096,4.760823) (8192,64.130651) (16384,387.615835)};
+\addlegendentry{T=20}
+\addplot+[thick, mark=*] coordinates {(256,0.082236) (512,0.359395) (1024,0.453269) (2048,0.915356) (4096,9.813447) (8192,59.171963) (16384,196.314183)};
+\addlegendentry{T=40}
+\addplot+[thick, mark=*] coordinates {(256,0.102951) (512,0.12655) (1024,0.211091) (2048,0.434839) (4096,4.224425) (8192,36.911049) (16384,148.694576)};
+\addlegendentry{T=60}
+\addplot+[thick, mark=*] coordinates {(256,0.654703) (512,0.477641) (1024,0.586435) (2048,0.75352) (4096,4.236006) (8192,33.994111) (16384,144.538766)};
+\addlegendentry{T=80}
+\addplot+[thick, mark=*] coordinates {(256,0.515032) (512,0.451244) (1024,0.560387) (2048,0.837294) (4096,3.886618) (8192,32.491284) (16384,122.635926)};
+\addlegendentry{T=100}
+\addplot+[thick, mark=*] coordinates {(256,0.456294) (512,0.478928) (1024,0.604965) (2048,1.016764) (4096,4.231924) (8192,31.724712) (16384,116.095479)};
+\addlegendentry{T=120}
+\addplot+[thick, mark=*] coordinates {(256,0.611513) (512,0.505197) (1024,0.638231) (2048,0.871265) (4096,4.330913) (8192,27.806407) (16384,108.797884)};
+\addlegendentry{T=140}
+\end{axis}
+\end{tikzpicture}
+
+\begin{tikzpicture}
+\begin{axis}[width=14cm,height=9cm,grid=both,xlabel={$N$},ylabel={Time [s]},title={Execution time vs N (v1b, O2, FastMath ON)},legend pos=north west,legend cell align=left,cycle list name=color list,mark options={scale=0.9}]
+\addplot+[thick, mark=*] coordinates {(256,0.140786) (512,0.583911) (1024,2.24171) (2048,8.871304) (4096,42.801265) (8192,760.065685)};
+\addlegendentry{T=1}
+\addplot+[thick, mark=*] coordinates {(256,0.080901) (512,0.324234) (1024,1.259675) (2048,4.384641) (4096,22.884375) (8192,372.562896)};
+\addlegendentry{T=2}
+\addplot+[thick, mark=*] coordinates {(256,0.087496) (512,0.283646) (1024,1.092855) (2048,4.132536) (4096,21.005439) (8192,226.248156)};
+\addlegendentry{T=3}
+\addplot+[thick, mark=*] coordinates {(256,0.082645) (512,0.249535) (1024,0.939053) (2048,3.600437) (4096,18.441994) (8192,174.144314)};
+\addlegendentry{T=4}
+\addplot+[thick, mark=*] coordinates {(256,0.097976) (512,0.221885) (1024,0.798465) (2048,3.152001) (4096,15.660635) (8192,147.232619) (16384,797.489752)};
+\addlegendentry{T=5}
+\addplot+[thick, mark=*] coordinates {(256,0.115641) (512,0.221429) (1024,0.747951) (2048,2.966824) (4096,14.89897) (8192,119.960716) (16384,689.01935)};
+\addlegendentry{T=6}
+\addplot+[thick, mark=*] coordinates {(256,0.118112) (512,0.278828) (1024,0.710504) (2048,2.625317) (4096,13.023906) (8192,103.40068) (16384,632.721188)};
+\addlegendentry{T=7}
+\addplot+[thick, mark=*] coordinates {(256,0.135782) (512,0.287143) (1024,0.642732) (2048,2.457986) (4096,11.519383) (8192,90.919321) (16384,598.117945)};
+\addlegendentry{T=8}
+\addplot+[thick, mark=*] coordinates {(256,0.148094) (512,0.308439) (1024,0.650727) (2048,2.505212) (4096,11.46803) (8192,92.649004) (16384,508.878738)};
+\addlegendentry{T=9}
+\addplot+[thick, mark=*] coordinates {(256,0.274586) (512,0.333204) (1024,0.767182) (2048,2.420052) (4096,10.721735) (8192,73.41209) (16384,482.696474)};
+\addlegendentry{T=10}
+\addplot+[thick, mark=*] coordinates {(256,0.329772) (512,0.621499) (1024,1.046343) (2048,2.408544) (4096,8.481246) (8192,59.065468) (16384,232.401295)};
+\addlegendentry{T=20}
+\addplot+[thick, mark=*] coordinates {(256,0.726495) (512,1.710061) (1024,2.834909) (2048,4.286089) (4096,13.771011) (8192,43.709948) (16384,152.736)};
+\addlegendentry{T=40}
+\addplot+[thick, mark=*] coordinates {(256,1.840126) (512,3.082863) (1024,7.225506) (2048,13.280767) (4096,20.990655) (8192,53.075185) (16384,115.866438)};
+\addlegendentry{T=60}
+\addplot+[thick, mark=*] coordinates {(256,2.103096) (512,3.968844) (1024,7.684707) (2048,16.291673) (4096,21.43918) (8192,46.919063) (16384,123.339587)};
+\addlegendentry{T=80}
+\addplot+[thick, mark=*] coordinates {(256,3.255127) (512,7.152181) (1024,13.225889) (2048,26.320203) (4096,45.194015) (8192,64.285405) (16384,165.261185)};
+\addlegendentry{T=100}
+\addplot+[thick, mark=*] coordinates {(256,4.133114) (512,8.37347) (1024,17.799737) (2048,32.693608) (4096,45.635091) (8192,101.661614) (16384,193.035865)};
+\addlegendentry{T=120}
+\addplot+[thick, mark=*] coordinates {(256,5.273272) (512,11.153572) (1024,21.988819) (2048,44.292581) (4096,84.06125) (8192,162.375381) (16384,261.372966)};
+\addlegendentry{T=140}
+\end{axis}
+\end{tikzpicture}
+
+\end{document}
