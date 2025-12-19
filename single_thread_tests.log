@@ -1,0 +1,801 @@
+= 1: v0 =
+   1 | OPT=O0  | FM=noffm  | T=1   | N=256    
+COMPILING:
+gcc -std=gnu99 -O0 -fno-fast-math -o single_thread/binaries/v0_O0_noffm_T1_N256 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O0_noffm_T1_N256.out -eo single_thread/results/v0_O0_noffm_T1_N256.err "./single_thread/binaries/v0_O0_noffm_T1_N256 256"
+STDOUT:
+Job <1470489> is submitted to default queue <short>.
+
+STDERR:
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+
+
+   2 | OPT=O0  | FM=noffm  | T=1   | N=512    
+COMPILING:
+gcc -std=gnu99 -O0 -fno-fast-math -o single_thread/binaries/v0_O0_noffm_T1_N512 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O0_noffm_T1_N512.out -eo single_thread/results/v0_O0_noffm_T1_N512.err "./single_thread/binaries/v0_O0_noffm_T1_N512 512"
+STDOUT:
+Job <1470572> is submitted to default queue <short>.
+
+STDERR:
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+
+
+   3 | OPT=O0  | FM=noffm  | T=1   | N=1024   
+COMPILING:
+gcc -std=gnu99 -O0 -fno-fast-math -o single_thread/binaries/v0_O0_noffm_T1_N1024 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O0_noffm_T1_N1024.out -eo single_thread/results/v0_O0_noffm_T1_N1024.err "./single_thread/binaries/v0_O0_noffm_T1_N1024 1024"
+STDOUT:
+Job <1470573> is submitted to default queue <short>.
+
+
+   4 | OPT=O0  | FM=noffm  | T=1   | N=2048   
+COMPILING:
+gcc -std=gnu99 -O0 -fno-fast-math -o single_thread/binaries/v0_O0_noffm_T1_N2048 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O0_noffm_T1_N2048.out -eo single_thread/results/v0_O0_noffm_T1_N2048.err "./single_thread/binaries/v0_O0_noffm_T1_N2048 2048"
+STDOUT:
+Job <1470574> is submitted to default queue <short>.
+
+
+   5 | OPT=O0  | FM=noffm  | T=1   | N=4096   
+COMPILING:
+gcc -std=gnu99 -O0 -fno-fast-math -o single_thread/binaries/v0_O0_noffm_T1_N4096 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O0_noffm_T1_N4096.out -eo single_thread/results/v0_O0_noffm_T1_N4096.err "./single_thread/binaries/v0_O0_noffm_T1_N4096 4096"
+STDOUT:
+Job <1470626> is submitted to default queue <short>.
+
+STDERR:
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+
+
+   6 | OPT=O0  | FM=noffm  | T=1   | N=8192   
+COMPILING:
+gcc -std=gnu99 -O0 -fno-fast-math -o single_thread/binaries/v0_O0_noffm_T1_N8192 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O0_noffm_T1_N8192.out -eo single_thread/results/v0_O0_noffm_T1_N8192.err "./single_thread/binaries/v0_O0_noffm_T1_N8192 8192"
+STDOUT:
+Job <1470684> is submitted to default queue <short>.
+
+STDERR:
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+
+
+   7 | OPT=O0  | FM=noffm  | T=1   | N=16384  
+COMPILING:
+gcc -std=gnu99 -O0 -fno-fast-math -o single_thread/binaries/v0_O0_noffm_T1_N16384 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O0_noffm_T1_N16384.out -eo single_thread/results/v0_O0_noffm_T1_N16384.err "./single_thread/binaries/v0_O0_noffm_T1_N16384 16384"
+STDOUT:
+Job <1470685> is submitted to default queue <short>.
+
+
+   8 | OPT=O0  | FM=ffm    | T=1   | N=256    
+COMPILING:
+gcc -std=gnu99 -O0 -ffast-math -o single_thread/binaries/v0_O0_ffm_T1_N256 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O0_ffm_T1_N256.out -eo single_thread/results/v0_O0_ffm_T1_N256.err "./single_thread/binaries/v0_O0_ffm_T1_N256 256"
+STDOUT:
+Job <1470687> is submitted to default queue <short>.
+
+
+   9 | OPT=O0  | FM=ffm    | T=1   | N=512    
+COMPILING:
+gcc -std=gnu99 -O0 -ffast-math -o single_thread/binaries/v0_O0_ffm_T1_N512 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O0_ffm_T1_N512.out -eo single_thread/results/v0_O0_ffm_T1_N512.err "./single_thread/binaries/v0_O0_ffm_T1_N512 512"
+STDOUT:
+Job <1470688> is submitted to default queue <short>.
+
+
+  10 | OPT=O0  | FM=ffm    | T=1   | N=1024   
+COMPILING:
+gcc -std=gnu99 -O0 -ffast-math -o single_thread/binaries/v0_O0_ffm_T1_N1024 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O0_ffm_T1_N1024.out -eo single_thread/results/v0_O0_ffm_T1_N1024.err "./single_thread/binaries/v0_O0_ffm_T1_N1024 1024"
+STDOUT:
+Job <1470736> is submitted to default queue <short>.
+
+STDERR:
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+
+
+  11 | OPT=O0  | FM=ffm    | T=1   | N=2048   
+COMPILING:
+gcc -std=gnu99 -O0 -ffast-math -o single_thread/binaries/v0_O0_ffm_T1_N2048 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O0_ffm_T1_N2048.out -eo single_thread/results/v0_O0_ffm_T1_N2048.err "./single_thread/binaries/v0_O0_ffm_T1_N2048 2048"
+STDOUT:
+Job <1470818> is submitted to default queue <short>.
+
+STDERR:
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+
+
+  12 | OPT=O0  | FM=ffm    | T=1   | N=4096   
+COMPILING:
+gcc -std=gnu99 -O0 -ffast-math -o single_thread/binaries/v0_O0_ffm_T1_N4096 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O0_ffm_T1_N4096.out -eo single_thread/results/v0_O0_ffm_T1_N4096.err "./single_thread/binaries/v0_O0_ffm_T1_N4096 4096"
+STDOUT:
+Job <1470908> is submitted to default queue <short>.
+
+STDERR:
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+
+
+  13 | OPT=O0  | FM=ffm    | T=1   | N=8192   
+COMPILING:
+gcc -std=gnu99 -O0 -ffast-math -o single_thread/binaries/v0_O0_ffm_T1_N8192 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O0_ffm_T1_N8192.out -eo single_thread/results/v0_O0_ffm_T1_N8192.err "./single_thread/binaries/v0_O0_ffm_T1_N8192 8192"
+STDOUT:
+Job <1471002> is submitted to default queue <short>.
+
+STDERR:
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+
+
+  14 | OPT=O0  | FM=ffm    | T=1   | N=16384  
+COMPILING:
+gcc -std=gnu99 -O0 -ffast-math -o single_thread/binaries/v0_O0_ffm_T1_N16384 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O0_ffm_T1_N16384.out -eo single_thread/results/v0_O0_ffm_T1_N16384.err "./single_thread/binaries/v0_O0_ffm_T1_N16384 16384"
+STDOUT:
+Job <1471146> is submitted to default queue <short>.
+
+STDERR:
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+
+
+  15 | OPT=O1  | FM=noffm  | T=1   | N=256    
+COMPILING:
+gcc -std=gnu99 -O1 -fno-fast-math -o single_thread/binaries/v0_O1_noffm_T1_N256 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O1_noffm_T1_N256.out -eo single_thread/results/v0_O1_noffm_T1_N256.err "./single_thread/binaries/v0_O1_noffm_T1_N256 256"
+STDOUT:
+Job <1471169> is submitted to default queue <short>.
+
+STDERR:
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+
+
+  16 | OPT=O1  | FM=noffm  | T=1   | N=512    
+COMPILING:
+gcc -std=gnu99 -O1 -fno-fast-math -o single_thread/binaries/v0_O1_noffm_T1_N512 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O1_noffm_T1_N512.out -eo single_thread/results/v0_O1_noffm_T1_N512.err "./single_thread/binaries/v0_O1_noffm_T1_N512 512"
+STDOUT:
+Job <1471182> is submitted to default queue <short>.
+
+STDERR:
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+
+
+  17 | OPT=O1  | FM=noffm  | T=1   | N=1024   
+COMPILING:
+gcc -std=gnu99 -O1 -fno-fast-math -o single_thread/binaries/v0_O1_noffm_T1_N1024 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O1_noffm_T1_N1024.out -eo single_thread/results/v0_O1_noffm_T1_N1024.err "./single_thread/binaries/v0_O1_noffm_T1_N1024 1024"
+STDOUT:
+Job <1471332> is submitted to default queue <short>.
+
+STDERR:
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+
+
+  18 | OPT=O1  | FM=noffm  | T=1   | N=2048   
+COMPILING:
+gcc -std=gnu99 -O1 -fno-fast-math -o single_thread/binaries/v0_O1_noffm_T1_N2048 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O1_noffm_T1_N2048.out -eo single_thread/results/v0_O1_noffm_T1_N2048.err "./single_thread/binaries/v0_O1_noffm_T1_N2048 2048"
+STDOUT:
+Job <1471333> is submitted to default queue <short>.
+
+
+  19 | OPT=O1  | FM=noffm  | T=1   | N=4096   
+COMPILING:
+gcc -std=gnu99 -O1 -fno-fast-math -o single_thread/binaries/v0_O1_noffm_T1_N4096 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O1_noffm_T1_N4096.out -eo single_thread/results/v0_O1_noffm_T1_N4096.err "./single_thread/binaries/v0_O1_noffm_T1_N4096 4096"
+STDOUT:
+Job <1471334> is submitted to default queue <short>.
+
+
+  20 | OPT=O1  | FM=noffm  | T=1   | N=8192   
+COMPILING:
+gcc -std=gnu99 -O1 -fno-fast-math -o single_thread/binaries/v0_O1_noffm_T1_N8192 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O1_noffm_T1_N8192.out -eo single_thread/results/v0_O1_noffm_T1_N8192.err "./single_thread/binaries/v0_O1_noffm_T1_N8192 8192"
+STDOUT:
+Job <1471335> is submitted to default queue <short>.
+
+
+  21 | OPT=O1  | FM=noffm  | T=1   | N=16384  
+COMPILING:
+gcc -std=gnu99 -O1 -fno-fast-math -o single_thread/binaries/v0_O1_noffm_T1_N16384 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O1_noffm_T1_N16384.out -eo single_thread/results/v0_O1_noffm_T1_N16384.err "./single_thread/binaries/v0_O1_noffm_T1_N16384 16384"
+STDOUT:
+Job <1471358> is submitted to default queue <short>.
+
+STDERR:
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+
+
+  22 | OPT=O1  | FM=ffm    | T=1   | N=256    
+COMPILING:
+gcc -std=gnu99 -O1 -ffast-math -o single_thread/binaries/v0_O1_ffm_T1_N256 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O1_ffm_T1_N256.out -eo single_thread/results/v0_O1_ffm_T1_N256.err "./single_thread/binaries/v0_O1_ffm_T1_N256 256"
+STDOUT:
+Job <1471359> is submitted to default queue <short>.
+
+
+  23 | OPT=O1  | FM=ffm    | T=1   | N=512    
+COMPILING:
+gcc -std=gnu99 -O1 -ffast-math -o single_thread/binaries/v0_O1_ffm_T1_N512 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O1_ffm_T1_N512.out -eo single_thread/results/v0_O1_ffm_T1_N512.err "./single_thread/binaries/v0_O1_ffm_T1_N512 512"
+STDOUT:
+Job <1471376> is submitted to default queue <short>.
+
+STDERR:
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+
+
+  24 | OPT=O1  | FM=ffm    | T=1   | N=1024   
+COMPILING:
+gcc -std=gnu99 -O1 -ffast-math -o single_thread/binaries/v0_O1_ffm_T1_N1024 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O1_ffm_T1_N1024.out -eo single_thread/results/v0_O1_ffm_T1_N1024.err "./single_thread/binaries/v0_O1_ffm_T1_N1024 1024"
+STDOUT:
+Job <1471398> is submitted to default queue <short>.
+
+STDERR:
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+
+
+  25 | OPT=O1  | FM=ffm    | T=1   | N=2048   
+COMPILING:
+gcc -std=gnu99 -O1 -ffast-math -o single_thread/binaries/v0_O1_ffm_T1_N2048 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O1_ffm_T1_N2048.out -eo single_thread/results/v0_O1_ffm_T1_N2048.err "./single_thread/binaries/v0_O1_ffm_T1_N2048 2048"
+STDOUT:
+Job <1471399> is submitted to default queue <short>.
+
+
+  26 | OPT=O1  | FM=ffm    | T=1   | N=4096   
+COMPILING:
+gcc -std=gnu99 -O1 -ffast-math -o single_thread/binaries/v0_O1_ffm_T1_N4096 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O1_ffm_T1_N4096.out -eo single_thread/results/v0_O1_ffm_T1_N4096.err "./single_thread/binaries/v0_O1_ffm_T1_N4096 4096"
+STDOUT:
+Job <1471400> is submitted to default queue <short>.
+
+
+  27 | OPT=O1  | FM=ffm    | T=1   | N=8192   
+COMPILING:
+gcc -std=gnu99 -O1 -ffast-math -o single_thread/binaries/v0_O1_ffm_T1_N8192 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O1_ffm_T1_N8192.out -eo single_thread/results/v0_O1_ffm_T1_N8192.err "./single_thread/binaries/v0_O1_ffm_T1_N8192 8192"
+STDOUT:
+Job <1471401> is submitted to default queue <short>.
+
+
+  28 | OPT=O1  | FM=ffm    | T=1   | N=16384  
+COMPILING:
+gcc -std=gnu99 -O1 -ffast-math -o single_thread/binaries/v0_O1_ffm_T1_N16384 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O1_ffm_T1_N16384.out -eo single_thread/results/v0_O1_ffm_T1_N16384.err "./single_thread/binaries/v0_O1_ffm_T1_N16384 16384"
+STDOUT:
+Job <1471402> is submitted to default queue <short>.
+
+
+  29 | OPT=O2  | FM=noffm  | T=1   | N=256    
+COMPILING:
+gcc -std=gnu99 -O2 -fno-fast-math -o single_thread/binaries/v0_O2_noffm_T1_N256 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O2_noffm_T1_N256.out -eo single_thread/results/v0_O2_noffm_T1_N256.err "./single_thread/binaries/v0_O2_noffm_T1_N256 256"
+STDOUT:
+Job <1471403> is submitted to default queue <short>.
+
+
+  30 | OPT=O2  | FM=noffm  | T=1   | N=512    
+COMPILING:
+gcc -std=gnu99 -O2 -fno-fast-math -o single_thread/binaries/v0_O2_noffm_T1_N512 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O2_noffm_T1_N512.out -eo single_thread/results/v0_O2_noffm_T1_N512.err "./single_thread/binaries/v0_O2_noffm_T1_N512 512"
+STDOUT:
+Job <1471417> is submitted to default queue <short>.
+
+STDERR:
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+
+
+  31 | OPT=O2  | FM=noffm  | T=1   | N=1024   
+COMPILING:
+gcc -std=gnu99 -O2 -fno-fast-math -o single_thread/binaries/v0_O2_noffm_T1_N1024 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O2_noffm_T1_N1024.out -eo single_thread/results/v0_O2_noffm_T1_N1024.err "./single_thread/binaries/v0_O2_noffm_T1_N1024 1024"
+STDOUT:
+Job <1471484> is submitted to default queue <short>.
+
+STDERR:
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+
+
+  32 | OPT=O2  | FM=noffm  | T=1   | N=2048   
+COMPILING:
+gcc -std=gnu99 -O2 -fno-fast-math -o single_thread/binaries/v0_O2_noffm_T1_N2048 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O2_noffm_T1_N2048.out -eo single_thread/results/v0_O2_noffm_T1_N2048.err "./single_thread/binaries/v0_O2_noffm_T1_N2048 2048"
+STDOUT:
+Job <1471546> is submitted to default queue <short>.
+
+STDERR:
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+
+
+  33 | OPT=O2  | FM=noffm  | T=1   | N=4096   
+COMPILING:
+gcc -std=gnu99 -O2 -fno-fast-math -o single_thread/binaries/v0_O2_noffm_T1_N4096 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O2_noffm_T1_N4096.out -eo single_thread/results/v0_O2_noffm_T1_N4096.err "./single_thread/binaries/v0_O2_noffm_T1_N4096 4096"
+STDOUT:
+Job <1471547> is submitted to default queue <short>.
+
+
+  34 | OPT=O2  | FM=noffm  | T=1   | N=8192   
+COMPILING:
+gcc -std=gnu99 -O2 -fno-fast-math -o single_thread/binaries/v0_O2_noffm_T1_N8192 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O2_noffm_T1_N8192.out -eo single_thread/results/v0_O2_noffm_T1_N8192.err "./single_thread/binaries/v0_O2_noffm_T1_N8192 8192"
+STDOUT:
+Job <1471548> is submitted to default queue <short>.
+
+
+  35 | OPT=O2  | FM=noffm  | T=1   | N=16384  
+COMPILING:
+gcc -std=gnu99 -O2 -fno-fast-math -o single_thread/binaries/v0_O2_noffm_T1_N16384 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O2_noffm_T1_N16384.out -eo single_thread/results/v0_O2_noffm_T1_N16384.err "./single_thread/binaries/v0_O2_noffm_T1_N16384 16384"
+STDOUT:
+Job <1471549> is submitted to default queue <short>.
+
+
+  36 | OPT=O2  | FM=ffm    | T=1   | N=256    
+COMPILING:
+gcc -std=gnu99 -O2 -ffast-math -o single_thread/binaries/v0_O2_ffm_T1_N256 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O2_ffm_T1_N256.out -eo single_thread/results/v0_O2_ffm_T1_N256.err "./single_thread/binaries/v0_O2_ffm_T1_N256 256"
+STDOUT:
+Job <1471550> is submitted to default queue <short>.
+
+
+  37 | OPT=O2  | FM=ffm    | T=1   | N=512    
+COMPILING:
+gcc -std=gnu99 -O2 -ffast-math -o single_thread/binaries/v0_O2_ffm_T1_N512 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O2_ffm_T1_N512.out -eo single_thread/results/v0_O2_ffm_T1_N512.err "./single_thread/binaries/v0_O2_ffm_T1_N512 512"
+STDOUT:
+Job <1471578> is submitted to default queue <short>.
+
+STDERR:
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+
+
+  38 | OPT=O2  | FM=ffm    | T=1   | N=1024   
+COMPILING:
+gcc -std=gnu99 -O2 -ffast-math -o single_thread/binaries/v0_O2_ffm_T1_N1024 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O2_ffm_T1_N1024.out -eo single_thread/results/v0_O2_ffm_T1_N1024.err "./single_thread/binaries/v0_O2_ffm_T1_N1024 1024"
+STDOUT:
+Job <1471755> is submitted to default queue <short>.
+
+STDERR:
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+
+
+  39 | OPT=O2  | FM=ffm    | T=1   | N=2048   
+COMPILING:
+gcc -std=gnu99 -O2 -ffast-math -o single_thread/binaries/v0_O2_ffm_T1_N2048 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O2_ffm_T1_N2048.out -eo single_thread/results/v0_O2_ffm_T1_N2048.err "./single_thread/binaries/v0_O2_ffm_T1_N2048 2048"
+STDOUT:
+Job <1471893> is submitted to default queue <short>.
+
+STDERR:
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+
+
+  40 | OPT=O2  | FM=ffm    | T=1   | N=4096   
+COMPILING:
+gcc -std=gnu99 -O2 -ffast-math -o single_thread/binaries/v0_O2_ffm_T1_N4096 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O2_ffm_T1_N4096.out -eo single_thread/results/v0_O2_ffm_T1_N4096.err "./single_thread/binaries/v0_O2_ffm_T1_N4096 4096"
+STDOUT:
+Job <1471982> is submitted to default queue <short>.
+
+STDERR:
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+
+
+  41 | OPT=O2  | FM=ffm    | T=1   | N=8192   
+COMPILING:
+gcc -std=gnu99 -O2 -ffast-math -o single_thread/binaries/v0_O2_ffm_T1_N8192 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O2_ffm_T1_N8192.out -eo single_thread/results/v0_O2_ffm_T1_N8192.err "./single_thread/binaries/v0_O2_ffm_T1_N8192 8192"
+STDOUT:
+Job <1471983> is submitted to default queue <short>.
+
+
+  42 | OPT=O2  | FM=ffm    | T=1   | N=16384  
+COMPILING:
+gcc -std=gnu99 -O2 -ffast-math -o single_thread/binaries/v0_O2_ffm_T1_N16384 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O2_ffm_T1_N16384.out -eo single_thread/results/v0_O2_ffm_T1_N16384.err "./single_thread/binaries/v0_O2_ffm_T1_N16384 16384"
+STDOUT:
+Job <1471984> is submitted to default queue <short>.
+
+
+  43 | OPT=O3  | FM=noffm  | T=1   | N=256    
+COMPILING:
+gcc -std=gnu99 -O3 -fno-fast-math -o single_thread/binaries/v0_O3_noffm_T1_N256 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O3_noffm_T1_N256.out -eo single_thread/results/v0_O3_noffm_T1_N256.err "./single_thread/binaries/v0_O3_noffm_T1_N256 256"
+STDOUT:
+Job <1471985> is submitted to default queue <short>.
+
+
+  44 | OPT=O3  | FM=noffm  | T=1   | N=512    
+COMPILING:
+gcc -std=gnu99 -O3 -fno-fast-math -o single_thread/binaries/v0_O3_noffm_T1_N512 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O3_noffm_T1_N512.out -eo single_thread/results/v0_O3_noffm_T1_N512.err "./single_thread/binaries/v0_O3_noffm_T1_N512 512"
+STDOUT:
+Job <1471986> is submitted to default queue <short>.
+
+
+  45 | OPT=O3  | FM=noffm  | T=1   | N=1024   
+COMPILING:
+gcc -std=gnu99 -O3 -fno-fast-math -o single_thread/binaries/v0_O3_noffm_T1_N1024 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O3_noffm_T1_N1024.out -eo single_thread/results/v0_O3_noffm_T1_N1024.err "./single_thread/binaries/v0_O3_noffm_T1_N1024 1024"
+STDOUT:
+Job <1472020> is submitted to default queue <short>.
+
+STDERR:
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+
+
+  46 | OPT=O3  | FM=noffm  | T=1   | N=2048   
+COMPILING:
+gcc -std=gnu99 -O3 -fno-fast-math -o single_thread/binaries/v0_O3_noffm_T1_N2048 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O3_noffm_T1_N2048.out -eo single_thread/results/v0_O3_noffm_T1_N2048.err "./single_thread/binaries/v0_O3_noffm_T1_N2048 2048"
+STDOUT:
+Job <1472021> is submitted to default queue <short>.
+
+
+  47 | OPT=O3  | FM=noffm  | T=1   | N=4096   
+COMPILING:
+gcc -std=gnu99 -O3 -fno-fast-math -o single_thread/binaries/v0_O3_noffm_T1_N4096 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O3_noffm_T1_N4096.out -eo single_thread/results/v0_O3_noffm_T1_N4096.err "./single_thread/binaries/v0_O3_noffm_T1_N4096 4096"
+STDOUT:
+Job <1472022> is submitted to default queue <short>.
+
+
+  48 | OPT=O3  | FM=noffm  | T=1   | N=8192   
+COMPILING:
+gcc -std=gnu99 -O3 -fno-fast-math -o single_thread/binaries/v0_O3_noffm_T1_N8192 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O3_noffm_T1_N8192.out -eo single_thread/results/v0_O3_noffm_T1_N8192.err "./single_thread/binaries/v0_O3_noffm_T1_N8192 8192"
+STDOUT:
+Job <1472023> is submitted to default queue <short>.
+
+
+  49 | OPT=O3  | FM=noffm  | T=1   | N=16384  
+COMPILING:
+gcc -std=gnu99 -O3 -fno-fast-math -o single_thread/binaries/v0_O3_noffm_T1_N16384 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O3_noffm_T1_N16384.out -eo single_thread/results/v0_O3_noffm_T1_N16384.err "./single_thread/binaries/v0_O3_noffm_T1_N16384 16384"
+STDOUT:
+Job <1472024> is submitted to default queue <short>.
+
+
+  50 | OPT=O3  | FM=ffm    | T=1   | N=256    
+COMPILING:
+gcc -std=gnu99 -O3 -ffast-math -o single_thread/binaries/v0_O3_ffm_T1_N256 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O3_ffm_T1_N256.out -eo single_thread/results/v0_O3_ffm_T1_N256.err "./single_thread/binaries/v0_O3_ffm_T1_N256 256"
+STDOUT:
+Job <1472152> is submitted to default queue <short>.
+
+STDERR:
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+
+
+  51 | OPT=O3  | FM=ffm    | T=1   | N=512    
+COMPILING:
+gcc -std=gnu99 -O3 -ffast-math -o single_thread/binaries/v0_O3_ffm_T1_N512 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O3_ffm_T1_N512.out -eo single_thread/results/v0_O3_ffm_T1_N512.err "./single_thread/binaries/v0_O3_ffm_T1_N512 512"
+STDOUT:
+Job <1472220> is submitted to default queue <short>.
+
+STDERR:
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+
+
+  52 | OPT=O3  | FM=ffm    | T=1   | N=1024   
+COMPILING:
+gcc -std=gnu99 -O3 -ffast-math -o single_thread/binaries/v0_O3_ffm_T1_N1024 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O3_ffm_T1_N1024.out -eo single_thread/results/v0_O3_ffm_T1_N1024.err "./single_thread/binaries/v0_O3_ffm_T1_N1024 1024"
+STDOUT:
+Job <1472258> is submitted to default queue <short>.
+
+STDERR:
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+
+
+  53 | OPT=O3  | FM=ffm    | T=1   | N=2048   
+COMPILING:
+gcc -std=gnu99 -O3 -ffast-math -o single_thread/binaries/v0_O3_ffm_T1_N2048 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O3_ffm_T1_N2048.out -eo single_thread/results/v0_O3_ffm_T1_N2048.err "./single_thread/binaries/v0_O3_ffm_T1_N2048 2048"
+STDOUT:
+Job <1472314> is submitted to default queue <short>.
+
+STDERR:
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+
+
+  54 | OPT=O3  | FM=ffm    | T=1   | N=4096   
+COMPILING:
+gcc -std=gnu99 -O3 -ffast-math -o single_thread/binaries/v0_O3_ffm_T1_N4096 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O3_ffm_T1_N4096.out -eo single_thread/results/v0_O3_ffm_T1_N4096.err "./single_thread/binaries/v0_O3_ffm_T1_N4096 4096"
+STDOUT:
+Job <1472315> is submitted to default queue <short>.
+
+
+  55 | OPT=O3  | FM=ffm    | T=1   | N=8192   
+COMPILING:
+gcc -std=gnu99 -O3 -ffast-math -o single_thread/binaries/v0_O3_ffm_T1_N8192 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O3_ffm_T1_N8192.out -eo single_thread/results/v0_O3_ffm_T1_N8192.err "./single_thread/binaries/v0_O3_ffm_T1_N8192 8192"
+STDOUT:
+Job <1472316> is submitted to default queue <short>.
+
+
+  56 | OPT=O3  | FM=ffm    | T=1   | N=16384  
+COMPILING:
+gcc -std=gnu99 -O3 -ffast-math -o single_thread/binaries/v0_O3_ffm_T1_N16384 v0.c
+
+Running:
+bsub -n 1 -W 15 -oo single_thread/results/v0_O3_ffm_T1_N16384.out -eo single_thread/results/v0_O3_ffm_T1_N16384.err "./single_thread/binaries/v0_O3_ffm_T1_N16384 16384"
+STDOUT:
+Job <1472403> is submitted to default queue <short>.
+
+STDERR:
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+User <edu-cmc-skpod25-327-06>: Pending job threshold reached. Retrying in 60 seconds...
+
+

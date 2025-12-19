@@ -1,8 +1,14 @@
+# Binaries
 v_given
 v0
 v1a
 v1b
 v2
+
+# Runs results
+single_thread/
+openmp/
+mpi/
 
 __pycache__/
 
