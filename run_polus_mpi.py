@@ -88,7 +88,7 @@ for i, code in enumerate(SOURCE_CODE_FILES, start=1):
 
         # REQUIRES `module load SpectrumMPI`!!!!!!!!!
         m = min(t, 20) # the number of cores in one host
-        run_command = f"bsub -n {m} -R \"span[hosts=1]\" -oo {out} -eo {err} mpirun --oversubscribe -np {t} ./{bin_path} -- {n}"
+        run_command = f"bsub -n {m} -R \"span[hosts=1]\" -oo {out} -eo {err} mpirun --oversubscribe -np {t} ./{bin_path} {n}"
         run_command = (
             f"bash -lc '"
             f"module load SpectrumMPI && "
