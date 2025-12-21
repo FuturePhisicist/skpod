@@ -9,6 +9,8 @@ v2
 # Runs results
 single_thread/
 openmp/
+openmp1/
+openmp_v1b_v2/
 mpi/
 
 __pycache__/

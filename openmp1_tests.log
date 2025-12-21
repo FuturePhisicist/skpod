@@ -1,0 +1,1122 @@
+= 1: v1a =
+   1 | OPT=O0  | FM=noffm  | T=160 | N=256    
+COMPILING:
+gcc -std=c99 -fopenmp -O0 -fno-fast-math -o openmp1/binaries/v1a_O0_noffm_T160_N256 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O0_noffm_T160_N256.out -eo openmp1/results/v1a_O0_noffm_T160_N256.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O0_noffm_T160_N256 256"
+STDOUT:
+Job <1501232> is submitted to default queue <short>.
+
+
+   2 | OPT=O0  | FM=noffm  | T=160 | N=512    
+COMPILING:
+gcc -std=c99 -fopenmp -O0 -fno-fast-math -o openmp1/binaries/v1a_O0_noffm_T160_N512 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O0_noffm_T160_N512.out -eo openmp1/results/v1a_O0_noffm_T160_N512.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O0_noffm_T160_N512 512"
+STDOUT:
+Job <1501233> is submitted to default queue <short>.
+
+
+   3 | OPT=O0  | FM=noffm  | T=160 | N=1024   
+COMPILING:
+gcc -std=c99 -fopenmp -O0 -fno-fast-math -o openmp1/binaries/v1a_O0_noffm_T160_N1024 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O0_noffm_T160_N1024.out -eo openmp1/results/v1a_O0_noffm_T160_N1024.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O0_noffm_T160_N1024 1024"
+STDOUT:
+Job <1501234> is submitted to default queue <short>.
+
+
+   4 | OPT=O0  | FM=noffm  | T=160 | N=2048   
+COMPILING:
+gcc -std=c99 -fopenmp -O0 -fno-fast-math -o openmp1/binaries/v1a_O0_noffm_T160_N2048 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O0_noffm_T160_N2048.out -eo openmp1/results/v1a_O0_noffm_T160_N2048.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O0_noffm_T160_N2048 2048"
+STDOUT:
+Job <1501235> is submitted to default queue <short>.
+
+
+   5 | OPT=O0  | FM=noffm  | T=160 | N=4096   
+COMPILING:
+gcc -std=c99 -fopenmp -O0 -fno-fast-math -o openmp1/binaries/v1a_O0_noffm_T160_N4096 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O0_noffm_T160_N4096.out -eo openmp1/results/v1a_O0_noffm_T160_N4096.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O0_noffm_T160_N4096 4096"
+STDOUT:
+Job <1501236> is submitted to default queue <short>.
+
+
+   6 | OPT=O0  | FM=noffm  | T=160 | N=8192   
+COMPILING:
+gcc -std=c99 -fopenmp -O0 -fno-fast-math -o openmp1/binaries/v1a_O0_noffm_T160_N8192 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O0_noffm_T160_N8192.out -eo openmp1/results/v1a_O0_noffm_T160_N8192.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O0_noffm_T160_N8192 8192"
+STDOUT:
+Job <1501237> is submitted to default queue <short>.
+
+
+   7 | OPT=O0  | FM=noffm  | T=160 | N=16384  
+COMPILING:
+gcc -std=c99 -fopenmp -O0 -fno-fast-math -o openmp1/binaries/v1a_O0_noffm_T160_N16384 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O0_noffm_T160_N16384.out -eo openmp1/results/v1a_O0_noffm_T160_N16384.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O0_noffm_T160_N16384 16384"
+STDOUT:
+Job <1501238> is submitted to default queue <short>.
+
+
+   8 | OPT=O0  | FM=ffm    | T=160 | N=256    
+COMPILING:
+gcc -std=c99 -fopenmp -O0 -ffast-math -o openmp1/binaries/v1a_O0_ffm_T160_N256 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O0_ffm_T160_N256.out -eo openmp1/results/v1a_O0_ffm_T160_N256.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O0_ffm_T160_N256 256"
+STDOUT:
+Job <1501239> is submitted to default queue <short>.
+
+
+   9 | OPT=O0  | FM=ffm    | T=160 | N=512    
+COMPILING:
+gcc -std=c99 -fopenmp -O0 -ffast-math -o openmp1/binaries/v1a_O0_ffm_T160_N512 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O0_ffm_T160_N512.out -eo openmp1/results/v1a_O0_ffm_T160_N512.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O0_ffm_T160_N512 512"
+STDOUT:
+Job <1501240> is submitted to default queue <short>.
+
+
+  10 | OPT=O0  | FM=ffm    | T=160 | N=1024   
+COMPILING:
+gcc -std=c99 -fopenmp -O0 -ffast-math -o openmp1/binaries/v1a_O0_ffm_T160_N1024 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O0_ffm_T160_N1024.out -eo openmp1/results/v1a_O0_ffm_T160_N1024.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O0_ffm_T160_N1024 1024"
+STDOUT:
+Job <1501241> is submitted to default queue <short>.
+
+
+  11 | OPT=O0  | FM=ffm    | T=160 | N=2048   
+COMPILING:
+gcc -std=c99 -fopenmp -O0 -ffast-math -o openmp1/binaries/v1a_O0_ffm_T160_N2048 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O0_ffm_T160_N2048.out -eo openmp1/results/v1a_O0_ffm_T160_N2048.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O0_ffm_T160_N2048 2048"
+STDOUT:
+Job <1501242> is submitted to default queue <short>.
+
+
+  12 | OPT=O0  | FM=ffm    | T=160 | N=4096   
+COMPILING:
+gcc -std=c99 -fopenmp -O0 -ffast-math -o openmp1/binaries/v1a_O0_ffm_T160_N4096 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O0_ffm_T160_N4096.out -eo openmp1/results/v1a_O0_ffm_T160_N4096.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O0_ffm_T160_N4096 4096"
+STDOUT:
+Job <1501243> is submitted to default queue <short>.
+
+
+  13 | OPT=O0  | FM=ffm    | T=160 | N=8192   
+COMPILING:
+gcc -std=c99 -fopenmp -O0 -ffast-math -o openmp1/binaries/v1a_O0_ffm_T160_N8192 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O0_ffm_T160_N8192.out -eo openmp1/results/v1a_O0_ffm_T160_N8192.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O0_ffm_T160_N8192 8192"
+STDOUT:
+Job <1501244> is submitted to default queue <short>.
+
+
+  14 | OPT=O0  | FM=ffm    | T=160 | N=16384  
+COMPILING:
+gcc -std=c99 -fopenmp -O0 -ffast-math -o openmp1/binaries/v1a_O0_ffm_T160_N16384 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O0_ffm_T160_N16384.out -eo openmp1/results/v1a_O0_ffm_T160_N16384.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O0_ffm_T160_N16384 16384"
+STDOUT:
+Job <1501245> is submitted to default queue <short>.
+
+
+  15 | OPT=O1  | FM=noffm  | T=160 | N=256    
+COMPILING:
+gcc -std=c99 -fopenmp -O1 -fno-fast-math -o openmp1/binaries/v1a_O1_noffm_T160_N256 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O1_noffm_T160_N256.out -eo openmp1/results/v1a_O1_noffm_T160_N256.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O1_noffm_T160_N256 256"
+STDOUT:
+Job <1501246> is submitted to default queue <short>.
+
+
+  16 | OPT=O1  | FM=noffm  | T=160 | N=512    
+COMPILING:
+gcc -std=c99 -fopenmp -O1 -fno-fast-math -o openmp1/binaries/v1a_O1_noffm_T160_N512 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O1_noffm_T160_N512.out -eo openmp1/results/v1a_O1_noffm_T160_N512.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O1_noffm_T160_N512 512"
+STDOUT:
+Job <1501247> is submitted to default queue <short>.
+
+
+  17 | OPT=O1  | FM=noffm  | T=160 | N=1024   
+COMPILING:
+gcc -std=c99 -fopenmp -O1 -fno-fast-math -o openmp1/binaries/v1a_O1_noffm_T160_N1024 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O1_noffm_T160_N1024.out -eo openmp1/results/v1a_O1_noffm_T160_N1024.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O1_noffm_T160_N1024 1024"
+STDOUT:
+Job <1501248> is submitted to default queue <short>.
+
+
+  18 | OPT=O1  | FM=noffm  | T=160 | N=2048   
+COMPILING:
+gcc -std=c99 -fopenmp -O1 -fno-fast-math -o openmp1/binaries/v1a_O1_noffm_T160_N2048 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O1_noffm_T160_N2048.out -eo openmp1/results/v1a_O1_noffm_T160_N2048.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O1_noffm_T160_N2048 2048"
+STDOUT:
+Job <1501249> is submitted to default queue <short>.
+
+
+  19 | OPT=O1  | FM=noffm  | T=160 | N=4096   
+COMPILING:
+gcc -std=c99 -fopenmp -O1 -fno-fast-math -o openmp1/binaries/v1a_O1_noffm_T160_N4096 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O1_noffm_T160_N4096.out -eo openmp1/results/v1a_O1_noffm_T160_N4096.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O1_noffm_T160_N4096 4096"
+STDOUT:
+Job <1501250> is submitted to default queue <short>.
+
+
+  20 | OPT=O1  | FM=noffm  | T=160 | N=8192   
+COMPILING:
+gcc -std=c99 -fopenmp -O1 -fno-fast-math -o openmp1/binaries/v1a_O1_noffm_T160_N8192 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O1_noffm_T160_N8192.out -eo openmp1/results/v1a_O1_noffm_T160_N8192.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O1_noffm_T160_N8192 8192"
+STDOUT:
+Job <1501251> is submitted to default queue <short>.
+
+
+  21 | OPT=O1  | FM=noffm  | T=160 | N=16384  
+COMPILING:
+gcc -std=c99 -fopenmp -O1 -fno-fast-math -o openmp1/binaries/v1a_O1_noffm_T160_N16384 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O1_noffm_T160_N16384.out -eo openmp1/results/v1a_O1_noffm_T160_N16384.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O1_noffm_T160_N16384 16384"
+STDOUT:
+Job <1501252> is submitted to default queue <short>.
+
+
+  22 | OPT=O1  | FM=ffm    | T=160 | N=256    
+COMPILING:
+gcc -std=c99 -fopenmp -O1 -ffast-math -o openmp1/binaries/v1a_O1_ffm_T160_N256 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O1_ffm_T160_N256.out -eo openmp1/results/v1a_O1_ffm_T160_N256.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O1_ffm_T160_N256 256"
+STDOUT:
+Job <1501253> is submitted to default queue <short>.
+
+
+  23 | OPT=O1  | FM=ffm    | T=160 | N=512    
+COMPILING:
+gcc -std=c99 -fopenmp -O1 -ffast-math -o openmp1/binaries/v1a_O1_ffm_T160_N512 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O1_ffm_T160_N512.out -eo openmp1/results/v1a_O1_ffm_T160_N512.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O1_ffm_T160_N512 512"
+STDOUT:
+Job <1501254> is submitted to default queue <short>.
+
+
+  24 | OPT=O1  | FM=ffm    | T=160 | N=1024   
+COMPILING:
+gcc -std=c99 -fopenmp -O1 -ffast-math -o openmp1/binaries/v1a_O1_ffm_T160_N1024 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O1_ffm_T160_N1024.out -eo openmp1/results/v1a_O1_ffm_T160_N1024.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O1_ffm_T160_N1024 1024"
+STDOUT:
+Job <1501255> is submitted to default queue <short>.
+
+
+  25 | OPT=O1  | FM=ffm    | T=160 | N=2048   
+COMPILING:
+gcc -std=c99 -fopenmp -O1 -ffast-math -o openmp1/binaries/v1a_O1_ffm_T160_N2048 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O1_ffm_T160_N2048.out -eo openmp1/results/v1a_O1_ffm_T160_N2048.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O1_ffm_T160_N2048 2048"
+STDOUT:
+Job <1501256> is submitted to default queue <short>.
+
+
+  26 | OPT=O1  | FM=ffm    | T=160 | N=4096   
+COMPILING:
+gcc -std=c99 -fopenmp -O1 -ffast-math -o openmp1/binaries/v1a_O1_ffm_T160_N4096 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O1_ffm_T160_N4096.out -eo openmp1/results/v1a_O1_ffm_T160_N4096.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O1_ffm_T160_N4096 4096"
+STDOUT:
+Job <1501257> is submitted to default queue <short>.
+
+
+  27 | OPT=O1  | FM=ffm    | T=160 | N=8192   
+COMPILING:
+gcc -std=c99 -fopenmp -O1 -ffast-math -o openmp1/binaries/v1a_O1_ffm_T160_N8192 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O1_ffm_T160_N8192.out -eo openmp1/results/v1a_O1_ffm_T160_N8192.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O1_ffm_T160_N8192 8192"
+STDOUT:
+Job <1501258> is submitted to default queue <short>.
+
+
+  28 | OPT=O1  | FM=ffm    | T=160 | N=16384  
+COMPILING:
+gcc -std=c99 -fopenmp -O1 -ffast-math -o openmp1/binaries/v1a_O1_ffm_T160_N16384 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O1_ffm_T160_N16384.out -eo openmp1/results/v1a_O1_ffm_T160_N16384.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O1_ffm_T160_N16384 16384"
+STDOUT:
+Job <1501259> is submitted to default queue <short>.
+
+
+  29 | OPT=O2  | FM=noffm  | T=160 | N=256    
+COMPILING:
+gcc -std=c99 -fopenmp -O2 -fno-fast-math -o openmp1/binaries/v1a_O2_noffm_T160_N256 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O2_noffm_T160_N256.out -eo openmp1/results/v1a_O2_noffm_T160_N256.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O2_noffm_T160_N256 256"
+STDOUT:
+Job <1501260> is submitted to default queue <short>.
+
+
+  30 | OPT=O2  | FM=noffm  | T=160 | N=512    
+COMPILING:
+gcc -std=c99 -fopenmp -O2 -fno-fast-math -o openmp1/binaries/v1a_O2_noffm_T160_N512 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O2_noffm_T160_N512.out -eo openmp1/results/v1a_O2_noffm_T160_N512.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O2_noffm_T160_N512 512"
+STDOUT:
+Job <1501261> is submitted to default queue <short>.
+
+
+  31 | OPT=O2  | FM=noffm  | T=160 | N=1024   
+COMPILING:
+gcc -std=c99 -fopenmp -O2 -fno-fast-math -o openmp1/binaries/v1a_O2_noffm_T160_N1024 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O2_noffm_T160_N1024.out -eo openmp1/results/v1a_O2_noffm_T160_N1024.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O2_noffm_T160_N1024 1024"
+STDOUT:
+Job <1501262> is submitted to default queue <short>.
+
+
+  32 | OPT=O2  | FM=noffm  | T=160 | N=2048   
+COMPILING:
+gcc -std=c99 -fopenmp -O2 -fno-fast-math -o openmp1/binaries/v1a_O2_noffm_T160_N2048 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O2_noffm_T160_N2048.out -eo openmp1/results/v1a_O2_noffm_T160_N2048.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O2_noffm_T160_N2048 2048"
+STDOUT:
+Job <1501263> is submitted to default queue <short>.
+
+
+  33 | OPT=O2  | FM=noffm  | T=160 | N=4096   
+COMPILING:
+gcc -std=c99 -fopenmp -O2 -fno-fast-math -o openmp1/binaries/v1a_O2_noffm_T160_N4096 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O2_noffm_T160_N4096.out -eo openmp1/results/v1a_O2_noffm_T160_N4096.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O2_noffm_T160_N4096 4096"
+STDOUT:
+Job <1501264> is submitted to default queue <short>.
+
+
+  34 | OPT=O2  | FM=noffm  | T=160 | N=8192   
+COMPILING:
+gcc -std=c99 -fopenmp -O2 -fno-fast-math -o openmp1/binaries/v1a_O2_noffm_T160_N8192 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O2_noffm_T160_N8192.out -eo openmp1/results/v1a_O2_noffm_T160_N8192.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O2_noffm_T160_N8192 8192"
+STDOUT:
+Job <1501265> is submitted to default queue <short>.
+
+
+  35 | OPT=O2  | FM=noffm  | T=160 | N=16384  
+COMPILING:
+gcc -std=c99 -fopenmp -O2 -fno-fast-math -o openmp1/binaries/v1a_O2_noffm_T160_N16384 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O2_noffm_T160_N16384.out -eo openmp1/results/v1a_O2_noffm_T160_N16384.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O2_noffm_T160_N16384 16384"
+STDOUT:
+Job <1501266> is submitted to default queue <short>.
+
+
+  36 | OPT=O2  | FM=ffm    | T=160 | N=256    
+COMPILING:
+gcc -std=c99 -fopenmp -O2 -ffast-math -o openmp1/binaries/v1a_O2_ffm_T160_N256 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O2_ffm_T160_N256.out -eo openmp1/results/v1a_O2_ffm_T160_N256.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O2_ffm_T160_N256 256"
+STDOUT:
+Job <1501267> is submitted to default queue <short>.
+
+
+  37 | OPT=O2  | FM=ffm    | T=160 | N=512    
+COMPILING:
+gcc -std=c99 -fopenmp -O2 -ffast-math -o openmp1/binaries/v1a_O2_ffm_T160_N512 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O2_ffm_T160_N512.out -eo openmp1/results/v1a_O2_ffm_T160_N512.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O2_ffm_T160_N512 512"
+STDOUT:
+Job <1501268> is submitted to default queue <short>.
+
+
+  38 | OPT=O2  | FM=ffm    | T=160 | N=1024   
+COMPILING:
+gcc -std=c99 -fopenmp -O2 -ffast-math -o openmp1/binaries/v1a_O2_ffm_T160_N1024 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O2_ffm_T160_N1024.out -eo openmp1/results/v1a_O2_ffm_T160_N1024.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O2_ffm_T160_N1024 1024"
+STDOUT:
+Job <1501269> is submitted to default queue <short>.
+
+
+  39 | OPT=O2  | FM=ffm    | T=160 | N=2048   
+COMPILING:
+gcc -std=c99 -fopenmp -O2 -ffast-math -o openmp1/binaries/v1a_O2_ffm_T160_N2048 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O2_ffm_T160_N2048.out -eo openmp1/results/v1a_O2_ffm_T160_N2048.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O2_ffm_T160_N2048 2048"
+STDOUT:
+Job <1501270> is submitted to default queue <short>.
+
+
+  40 | OPT=O2  | FM=ffm    | T=160 | N=4096   
+COMPILING:
+gcc -std=c99 -fopenmp -O2 -ffast-math -o openmp1/binaries/v1a_O2_ffm_T160_N4096 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O2_ffm_T160_N4096.out -eo openmp1/results/v1a_O2_ffm_T160_N4096.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O2_ffm_T160_N4096 4096"
+STDOUT:
+Job <1501271> is submitted to default queue <short>.
+
+
+  41 | OPT=O2  | FM=ffm    | T=160 | N=8192   
+COMPILING:
+gcc -std=c99 -fopenmp -O2 -ffast-math -o openmp1/binaries/v1a_O2_ffm_T160_N8192 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O2_ffm_T160_N8192.out -eo openmp1/results/v1a_O2_ffm_T160_N8192.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O2_ffm_T160_N8192 8192"
+STDOUT:
+Job <1501272> is submitted to default queue <short>.
+
+
+  42 | OPT=O2  | FM=ffm    | T=160 | N=16384  
+COMPILING:
+gcc -std=c99 -fopenmp -O2 -ffast-math -o openmp1/binaries/v1a_O2_ffm_T160_N16384 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O2_ffm_T160_N16384.out -eo openmp1/results/v1a_O2_ffm_T160_N16384.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O2_ffm_T160_N16384 16384"
+STDOUT:
+Job <1501273> is submitted to default queue <short>.
+
+
+  43 | OPT=O3  | FM=noffm  | T=160 | N=256    
+COMPILING:
+gcc -std=c99 -fopenmp -O3 -fno-fast-math -o openmp1/binaries/v1a_O3_noffm_T160_N256 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O3_noffm_T160_N256.out -eo openmp1/results/v1a_O3_noffm_T160_N256.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O3_noffm_T160_N256 256"
+STDOUT:
+Job <1501274> is submitted to default queue <short>.
+
+
+  44 | OPT=O3  | FM=noffm  | T=160 | N=512    
+COMPILING:
+gcc -std=c99 -fopenmp -O3 -fno-fast-math -o openmp1/binaries/v1a_O3_noffm_T160_N512 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O3_noffm_T160_N512.out -eo openmp1/results/v1a_O3_noffm_T160_N512.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O3_noffm_T160_N512 512"
+STDOUT:
+Job <1501275> is submitted to default queue <short>.
+
+
+  45 | OPT=O3  | FM=noffm  | T=160 | N=1024   
+COMPILING:
+gcc -std=c99 -fopenmp -O3 -fno-fast-math -o openmp1/binaries/v1a_O3_noffm_T160_N1024 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O3_noffm_T160_N1024.out -eo openmp1/results/v1a_O3_noffm_T160_N1024.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O3_noffm_T160_N1024 1024"
+STDOUT:
+Job <1501276> is submitted to default queue <short>.
+
+
+  46 | OPT=O3  | FM=noffm  | T=160 | N=2048   
+COMPILING:
+gcc -std=c99 -fopenmp -O3 -fno-fast-math -o openmp1/binaries/v1a_O3_noffm_T160_N2048 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O3_noffm_T160_N2048.out -eo openmp1/results/v1a_O3_noffm_T160_N2048.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O3_noffm_T160_N2048 2048"
+STDOUT:
+Job <1501277> is submitted to default queue <short>.
+
+
+  47 | OPT=O3  | FM=noffm  | T=160 | N=4096   
+COMPILING:
+gcc -std=c99 -fopenmp -O3 -fno-fast-math -o openmp1/binaries/v1a_O3_noffm_T160_N4096 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O3_noffm_T160_N4096.out -eo openmp1/results/v1a_O3_noffm_T160_N4096.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O3_noffm_T160_N4096 4096"
+STDOUT:
+Job <1501278> is submitted to default queue <short>.
+
+
+  48 | OPT=O3  | FM=noffm  | T=160 | N=8192   
+COMPILING:
+gcc -std=c99 -fopenmp -O3 -fno-fast-math -o openmp1/binaries/v1a_O3_noffm_T160_N8192 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O3_noffm_T160_N8192.out -eo openmp1/results/v1a_O3_noffm_T160_N8192.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O3_noffm_T160_N8192 8192"
+STDOUT:
+Job <1501279> is submitted to default queue <short>.
+
+
+  49 | OPT=O3  | FM=noffm  | T=160 | N=16384  
+COMPILING:
+gcc -std=c99 -fopenmp -O3 -fno-fast-math -o openmp1/binaries/v1a_O3_noffm_T160_N16384 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O3_noffm_T160_N16384.out -eo openmp1/results/v1a_O3_noffm_T160_N16384.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O3_noffm_T160_N16384 16384"
+STDOUT:
+Job <1501280> is submitted to default queue <short>.
+
+
+  50 | OPT=O3  | FM=ffm    | T=160 | N=256    
+COMPILING:
+gcc -std=c99 -fopenmp -O3 -ffast-math -o openmp1/binaries/v1a_O3_ffm_T160_N256 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O3_ffm_T160_N256.out -eo openmp1/results/v1a_O3_ffm_T160_N256.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O3_ffm_T160_N256 256"
+STDOUT:
+Job <1501281> is submitted to default queue <short>.
+
+
+  51 | OPT=O3  | FM=ffm    | T=160 | N=512    
+COMPILING:
+gcc -std=c99 -fopenmp -O3 -ffast-math -o openmp1/binaries/v1a_O3_ffm_T160_N512 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O3_ffm_T160_N512.out -eo openmp1/results/v1a_O3_ffm_T160_N512.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O3_ffm_T160_N512 512"
+STDOUT:
+Job <1501282> is submitted to default queue <short>.
+
+
+  52 | OPT=O3  | FM=ffm    | T=160 | N=1024   
+COMPILING:
+gcc -std=c99 -fopenmp -O3 -ffast-math -o openmp1/binaries/v1a_O3_ffm_T160_N1024 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O3_ffm_T160_N1024.out -eo openmp1/results/v1a_O3_ffm_T160_N1024.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O3_ffm_T160_N1024 1024"
+STDOUT:
+Job <1501283> is submitted to default queue <short>.
+
+
+  53 | OPT=O3  | FM=ffm    | T=160 | N=2048   
+COMPILING:
+gcc -std=c99 -fopenmp -O3 -ffast-math -o openmp1/binaries/v1a_O3_ffm_T160_N2048 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O3_ffm_T160_N2048.out -eo openmp1/results/v1a_O3_ffm_T160_N2048.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O3_ffm_T160_N2048 2048"
+STDOUT:
+Job <1501284> is submitted to default queue <short>.
+
+
+  54 | OPT=O3  | FM=ffm    | T=160 | N=4096   
+COMPILING:
+gcc -std=c99 -fopenmp -O3 -ffast-math -o openmp1/binaries/v1a_O3_ffm_T160_N4096 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O3_ffm_T160_N4096.out -eo openmp1/results/v1a_O3_ffm_T160_N4096.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O3_ffm_T160_N4096 4096"
+STDOUT:
+Job <1501285> is submitted to default queue <short>.
+
+
+  55 | OPT=O3  | FM=ffm    | T=160 | N=8192   
+COMPILING:
+gcc -std=c99 -fopenmp -O3 -ffast-math -o openmp1/binaries/v1a_O3_ffm_T160_N8192 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O3_ffm_T160_N8192.out -eo openmp1/results/v1a_O3_ffm_T160_N8192.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O3_ffm_T160_N8192 8192"
+STDOUT:
+Job <1501286> is submitted to default queue <short>.
+
+
+  56 | OPT=O3  | FM=ffm    | T=160 | N=16384  
+COMPILING:
+gcc -std=c99 -fopenmp -O3 -ffast-math -o openmp1/binaries/v1a_O3_ffm_T160_N16384 v1a.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1a_O3_ffm_T160_N16384.out -eo openmp1/results/v1a_O3_ffm_T160_N16384.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1a_O3_ffm_T160_N16384 16384"
+STDOUT:
+Job <1501287> is submitted to default queue <short>.
+
+
+= 2: v1b =
+  57 | OPT=O0  | FM=noffm  | T=160 | N=256    
+COMPILING:
+gcc -std=c99 -fopenmp -O0 -fno-fast-math -o openmp1/binaries/v1b_O0_noffm_T160_N256 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O0_noffm_T160_N256.out -eo openmp1/results/v1b_O0_noffm_T160_N256.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O0_noffm_T160_N256 256"
+STDOUT:
+Job <1501288> is submitted to default queue <short>.
+
+
+  58 | OPT=O0  | FM=noffm  | T=160 | N=512    
+COMPILING:
+gcc -std=c99 -fopenmp -O0 -fno-fast-math -o openmp1/binaries/v1b_O0_noffm_T160_N512 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O0_noffm_T160_N512.out -eo openmp1/results/v1b_O0_noffm_T160_N512.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O0_noffm_T160_N512 512"
+STDOUT:
+Job <1501289> is submitted to default queue <short>.
+
+
+  59 | OPT=O0  | FM=noffm  | T=160 | N=1024   
+COMPILING:
+gcc -std=c99 -fopenmp -O0 -fno-fast-math -o openmp1/binaries/v1b_O0_noffm_T160_N1024 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O0_noffm_T160_N1024.out -eo openmp1/results/v1b_O0_noffm_T160_N1024.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O0_noffm_T160_N1024 1024"
+STDOUT:
+Job <1501290> is submitted to default queue <short>.
+
+
+  60 | OPT=O0  | FM=noffm  | T=160 | N=2048   
+COMPILING:
+gcc -std=c99 -fopenmp -O0 -fno-fast-math -o openmp1/binaries/v1b_O0_noffm_T160_N2048 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O0_noffm_T160_N2048.out -eo openmp1/results/v1b_O0_noffm_T160_N2048.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O0_noffm_T160_N2048 2048"
+STDOUT:
+Job <1501291> is submitted to default queue <short>.
+
+
+  61 | OPT=O0  | FM=noffm  | T=160 | N=4096   
+COMPILING:
+gcc -std=c99 -fopenmp -O0 -fno-fast-math -o openmp1/binaries/v1b_O0_noffm_T160_N4096 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O0_noffm_T160_N4096.out -eo openmp1/results/v1b_O0_noffm_T160_N4096.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O0_noffm_T160_N4096 4096"
+STDOUT:
+Job <1501292> is submitted to default queue <short>.
+
+
+  62 | OPT=O0  | FM=noffm  | T=160 | N=8192   
+COMPILING:
+gcc -std=c99 -fopenmp -O0 -fno-fast-math -o openmp1/binaries/v1b_O0_noffm_T160_N8192 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O0_noffm_T160_N8192.out -eo openmp1/results/v1b_O0_noffm_T160_N8192.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O0_noffm_T160_N8192 8192"
+STDOUT:
+Job <1501293> is submitted to default queue <short>.
+
+
+  63 | OPT=O0  | FM=noffm  | T=160 | N=16384  
+COMPILING:
+gcc -std=c99 -fopenmp -O0 -fno-fast-math -o openmp1/binaries/v1b_O0_noffm_T160_N16384 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O0_noffm_T160_N16384.out -eo openmp1/results/v1b_O0_noffm_T160_N16384.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O0_noffm_T160_N16384 16384"
+STDOUT:
+Job <1501294> is submitted to default queue <short>.
+
+
+  64 | OPT=O0  | FM=ffm    | T=160 | N=256    
+COMPILING:
+gcc -std=c99 -fopenmp -O0 -ffast-math -o openmp1/binaries/v1b_O0_ffm_T160_N256 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O0_ffm_T160_N256.out -eo openmp1/results/v1b_O0_ffm_T160_N256.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O0_ffm_T160_N256 256"
+STDOUT:
+Job <1501295> is submitted to default queue <short>.
+
+
+  65 | OPT=O0  | FM=ffm    | T=160 | N=512    
+COMPILING:
+gcc -std=c99 -fopenmp -O0 -ffast-math -o openmp1/binaries/v1b_O0_ffm_T160_N512 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O0_ffm_T160_N512.out -eo openmp1/results/v1b_O0_ffm_T160_N512.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O0_ffm_T160_N512 512"
+STDOUT:
+Job <1501296> is submitted to default queue <short>.
+
+
+  66 | OPT=O0  | FM=ffm    | T=160 | N=1024   
+COMPILING:
+gcc -std=c99 -fopenmp -O0 -ffast-math -o openmp1/binaries/v1b_O0_ffm_T160_N1024 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O0_ffm_T160_N1024.out -eo openmp1/results/v1b_O0_ffm_T160_N1024.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O0_ffm_T160_N1024 1024"
+STDOUT:
+Job <1501297> is submitted to default queue <short>.
+
+
+  67 | OPT=O0  | FM=ffm    | T=160 | N=2048   
+COMPILING:
+gcc -std=c99 -fopenmp -O0 -ffast-math -o openmp1/binaries/v1b_O0_ffm_T160_N2048 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O0_ffm_T160_N2048.out -eo openmp1/results/v1b_O0_ffm_T160_N2048.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O0_ffm_T160_N2048 2048"
+STDOUT:
+Job <1501298> is submitted to default queue <short>.
+
+
+  68 | OPT=O0  | FM=ffm    | T=160 | N=4096   
+COMPILING:
+gcc -std=c99 -fopenmp -O0 -ffast-math -o openmp1/binaries/v1b_O0_ffm_T160_N4096 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O0_ffm_T160_N4096.out -eo openmp1/results/v1b_O0_ffm_T160_N4096.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O0_ffm_T160_N4096 4096"
+STDOUT:
+Job <1501299> is submitted to default queue <short>.
+
+
+  69 | OPT=O0  | FM=ffm    | T=160 | N=8192   
+COMPILING:
+gcc -std=c99 -fopenmp -O0 -ffast-math -o openmp1/binaries/v1b_O0_ffm_T160_N8192 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O0_ffm_T160_N8192.out -eo openmp1/results/v1b_O0_ffm_T160_N8192.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O0_ffm_T160_N8192 8192"
+STDOUT:
+Job <1501300> is submitted to default queue <short>.
+
+
+  70 | OPT=O0  | FM=ffm    | T=160 | N=16384  
+COMPILING:
+gcc -std=c99 -fopenmp -O0 -ffast-math -o openmp1/binaries/v1b_O0_ffm_T160_N16384 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O0_ffm_T160_N16384.out -eo openmp1/results/v1b_O0_ffm_T160_N16384.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O0_ffm_T160_N16384 16384"
+STDOUT:
+Job <1501301> is submitted to default queue <short>.
+
+
+  71 | OPT=O1  | FM=noffm  | T=160 | N=256    
+COMPILING:
+gcc -std=c99 -fopenmp -O1 -fno-fast-math -o openmp1/binaries/v1b_O1_noffm_T160_N256 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O1_noffm_T160_N256.out -eo openmp1/results/v1b_O1_noffm_T160_N256.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O1_noffm_T160_N256 256"
+STDOUT:
+Job <1501302> is submitted to default queue <short>.
+
+
+  72 | OPT=O1  | FM=noffm  | T=160 | N=512    
+COMPILING:
+gcc -std=c99 -fopenmp -O1 -fno-fast-math -o openmp1/binaries/v1b_O1_noffm_T160_N512 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O1_noffm_T160_N512.out -eo openmp1/results/v1b_O1_noffm_T160_N512.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O1_noffm_T160_N512 512"
+STDOUT:
+Job <1501303> is submitted to default queue <short>.
+
+
+  73 | OPT=O1  | FM=noffm  | T=160 | N=1024   
+COMPILING:
+gcc -std=c99 -fopenmp -O1 -fno-fast-math -o openmp1/binaries/v1b_O1_noffm_T160_N1024 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O1_noffm_T160_N1024.out -eo openmp1/results/v1b_O1_noffm_T160_N1024.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O1_noffm_T160_N1024 1024"
+STDOUT:
+Job <1501304> is submitted to default queue <short>.
+
+
+  74 | OPT=O1  | FM=noffm  | T=160 | N=2048   
+COMPILING:
+gcc -std=c99 -fopenmp -O1 -fno-fast-math -o openmp1/binaries/v1b_O1_noffm_T160_N2048 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O1_noffm_T160_N2048.out -eo openmp1/results/v1b_O1_noffm_T160_N2048.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O1_noffm_T160_N2048 2048"
+STDOUT:
+Job <1501305> is submitted to default queue <short>.
+
+
+  75 | OPT=O1  | FM=noffm  | T=160 | N=4096   
+COMPILING:
+gcc -std=c99 -fopenmp -O1 -fno-fast-math -o openmp1/binaries/v1b_O1_noffm_T160_N4096 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O1_noffm_T160_N4096.out -eo openmp1/results/v1b_O1_noffm_T160_N4096.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O1_noffm_T160_N4096 4096"
+STDOUT:
+Job <1501306> is submitted to default queue <short>.
+
+
+  76 | OPT=O1  | FM=noffm  | T=160 | N=8192   
+COMPILING:
+gcc -std=c99 -fopenmp -O1 -fno-fast-math -o openmp1/binaries/v1b_O1_noffm_T160_N8192 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O1_noffm_T160_N8192.out -eo openmp1/results/v1b_O1_noffm_T160_N8192.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O1_noffm_T160_N8192 8192"
+STDOUT:
+Job <1501307> is submitted to default queue <short>.
+
+
+  77 | OPT=O1  | FM=noffm  | T=160 | N=16384  
+COMPILING:
+gcc -std=c99 -fopenmp -O1 -fno-fast-math -o openmp1/binaries/v1b_O1_noffm_T160_N16384 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O1_noffm_T160_N16384.out -eo openmp1/results/v1b_O1_noffm_T160_N16384.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O1_noffm_T160_N16384 16384"
+STDOUT:
+Job <1501308> is submitted to default queue <short>.
+
+
+  78 | OPT=O1  | FM=ffm    | T=160 | N=256    
+COMPILING:
+gcc -std=c99 -fopenmp -O1 -ffast-math -o openmp1/binaries/v1b_O1_ffm_T160_N256 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O1_ffm_T160_N256.out -eo openmp1/results/v1b_O1_ffm_T160_N256.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O1_ffm_T160_N256 256"
+STDOUT:
+Job <1501309> is submitted to default queue <short>.
+
+
+  79 | OPT=O1  | FM=ffm    | T=160 | N=512    
+COMPILING:
+gcc -std=c99 -fopenmp -O1 -ffast-math -o openmp1/binaries/v1b_O1_ffm_T160_N512 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O1_ffm_T160_N512.out -eo openmp1/results/v1b_O1_ffm_T160_N512.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O1_ffm_T160_N512 512"
+STDOUT:
+Job <1501310> is submitted to default queue <short>.
+
+
+  80 | OPT=O1  | FM=ffm    | T=160 | N=1024   
+COMPILING:
+gcc -std=c99 -fopenmp -O1 -ffast-math -o openmp1/binaries/v1b_O1_ffm_T160_N1024 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O1_ffm_T160_N1024.out -eo openmp1/results/v1b_O1_ffm_T160_N1024.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O1_ffm_T160_N1024 1024"
+STDOUT:
+Job <1501311> is submitted to default queue <short>.
+
+
+  81 | OPT=O1  | FM=ffm    | T=160 | N=2048   
+COMPILING:
+gcc -std=c99 -fopenmp -O1 -ffast-math -o openmp1/binaries/v1b_O1_ffm_T160_N2048 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O1_ffm_T160_N2048.out -eo openmp1/results/v1b_O1_ffm_T160_N2048.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O1_ffm_T160_N2048 2048"
+STDOUT:
+Job <1501312> is submitted to default queue <short>.
+
+
+  82 | OPT=O1  | FM=ffm    | T=160 | N=4096   
+COMPILING:
+gcc -std=c99 -fopenmp -O1 -ffast-math -o openmp1/binaries/v1b_O1_ffm_T160_N4096 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O1_ffm_T160_N4096.out -eo openmp1/results/v1b_O1_ffm_T160_N4096.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O1_ffm_T160_N4096 4096"
+STDOUT:
+Job <1501313> is submitted to default queue <short>.
+
+
+  83 | OPT=O1  | FM=ffm    | T=160 | N=8192   
+COMPILING:
+gcc -std=c99 -fopenmp -O1 -ffast-math -o openmp1/binaries/v1b_O1_ffm_T160_N8192 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O1_ffm_T160_N8192.out -eo openmp1/results/v1b_O1_ffm_T160_N8192.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O1_ffm_T160_N8192 8192"
+STDOUT:
+Job <1501314> is submitted to default queue <short>.
+
+
+  84 | OPT=O1  | FM=ffm    | T=160 | N=16384  
+COMPILING:
+gcc -std=c99 -fopenmp -O1 -ffast-math -o openmp1/binaries/v1b_O1_ffm_T160_N16384 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O1_ffm_T160_N16384.out -eo openmp1/results/v1b_O1_ffm_T160_N16384.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O1_ffm_T160_N16384 16384"
+STDOUT:
+Job <1501315> is submitted to default queue <short>.
+
+
+  85 | OPT=O2  | FM=noffm  | T=160 | N=256    
+COMPILING:
+gcc -std=c99 -fopenmp -O2 -fno-fast-math -o openmp1/binaries/v1b_O2_noffm_T160_N256 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O2_noffm_T160_N256.out -eo openmp1/results/v1b_O2_noffm_T160_N256.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O2_noffm_T160_N256 256"
+STDOUT:
+Job <1501316> is submitted to default queue <short>.
+
+
+  86 | OPT=O2  | FM=noffm  | T=160 | N=512    
+COMPILING:
+gcc -std=c99 -fopenmp -O2 -fno-fast-math -o openmp1/binaries/v1b_O2_noffm_T160_N512 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O2_noffm_T160_N512.out -eo openmp1/results/v1b_O2_noffm_T160_N512.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O2_noffm_T160_N512 512"
+STDOUT:
+Job <1501317> is submitted to default queue <short>.
+
+
+  87 | OPT=O2  | FM=noffm  | T=160 | N=1024   
+COMPILING:
+gcc -std=c99 -fopenmp -O2 -fno-fast-math -o openmp1/binaries/v1b_O2_noffm_T160_N1024 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O2_noffm_T160_N1024.out -eo openmp1/results/v1b_O2_noffm_T160_N1024.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O2_noffm_T160_N1024 1024"
+STDOUT:
+Job <1501318> is submitted to default queue <short>.
+
+
+  88 | OPT=O2  | FM=noffm  | T=160 | N=2048   
+COMPILING:
+gcc -std=c99 -fopenmp -O2 -fno-fast-math -o openmp1/binaries/v1b_O2_noffm_T160_N2048 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O2_noffm_T160_N2048.out -eo openmp1/results/v1b_O2_noffm_T160_N2048.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O2_noffm_T160_N2048 2048"
+STDOUT:
+Job <1501319> is submitted to default queue <short>.
+
+
+  89 | OPT=O2  | FM=noffm  | T=160 | N=4096   
+COMPILING:
+gcc -std=c99 -fopenmp -O2 -fno-fast-math -o openmp1/binaries/v1b_O2_noffm_T160_N4096 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O2_noffm_T160_N4096.out -eo openmp1/results/v1b_O2_noffm_T160_N4096.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O2_noffm_T160_N4096 4096"
+STDOUT:
+Job <1501320> is submitted to default queue <short>.
+
+
+  90 | OPT=O2  | FM=noffm  | T=160 | N=8192   
+COMPILING:
+gcc -std=c99 -fopenmp -O2 -fno-fast-math -o openmp1/binaries/v1b_O2_noffm_T160_N8192 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O2_noffm_T160_N8192.out -eo openmp1/results/v1b_O2_noffm_T160_N8192.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O2_noffm_T160_N8192 8192"
+STDOUT:
+Job <1501321> is submitted to default queue <short>.
+
+
+  91 | OPT=O2  | FM=noffm  | T=160 | N=16384  
+COMPILING:
+gcc -std=c99 -fopenmp -O2 -fno-fast-math -o openmp1/binaries/v1b_O2_noffm_T160_N16384 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O2_noffm_T160_N16384.out -eo openmp1/results/v1b_O2_noffm_T160_N16384.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O2_noffm_T160_N16384 16384"
+STDOUT:
+Job <1501322> is submitted to default queue <short>.
+
+
+  92 | OPT=O2  | FM=ffm    | T=160 | N=256    
+COMPILING:
+gcc -std=c99 -fopenmp -O2 -ffast-math -o openmp1/binaries/v1b_O2_ffm_T160_N256 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O2_ffm_T160_N256.out -eo openmp1/results/v1b_O2_ffm_T160_N256.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O2_ffm_T160_N256 256"
+STDOUT:
+Job <1501323> is submitted to default queue <short>.
+
+
+  93 | OPT=O2  | FM=ffm    | T=160 | N=512    
+COMPILING:
+gcc -std=c99 -fopenmp -O2 -ffast-math -o openmp1/binaries/v1b_O2_ffm_T160_N512 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O2_ffm_T160_N512.out -eo openmp1/results/v1b_O2_ffm_T160_N512.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O2_ffm_T160_N512 512"
+STDOUT:
+Job <1501324> is submitted to default queue <short>.
+
+
+  94 | OPT=O2  | FM=ffm    | T=160 | N=1024   
+COMPILING:
+gcc -std=c99 -fopenmp -O2 -ffast-math -o openmp1/binaries/v1b_O2_ffm_T160_N1024 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O2_ffm_T160_N1024.out -eo openmp1/results/v1b_O2_ffm_T160_N1024.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O2_ffm_T160_N1024 1024"
+STDOUT:
+Job <1501325> is submitted to default queue <short>.
+
+
+  95 | OPT=O2  | FM=ffm    | T=160 | N=2048   
+COMPILING:
+gcc -std=c99 -fopenmp -O2 -ffast-math -o openmp1/binaries/v1b_O2_ffm_T160_N2048 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O2_ffm_T160_N2048.out -eo openmp1/results/v1b_O2_ffm_T160_N2048.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O2_ffm_T160_N2048 2048"
+STDOUT:
+Job <1501326> is submitted to default queue <short>.
+
+
+  96 | OPT=O2  | FM=ffm    | T=160 | N=4096   
+COMPILING:
+gcc -std=c99 -fopenmp -O2 -ffast-math -o openmp1/binaries/v1b_O2_ffm_T160_N4096 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O2_ffm_T160_N4096.out -eo openmp1/results/v1b_O2_ffm_T160_N4096.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O2_ffm_T160_N4096 4096"
+STDOUT:
+Job <1501327> is submitted to default queue <short>.
+
+
+  97 | OPT=O2  | FM=ffm    | T=160 | N=8192   
+COMPILING:
+gcc -std=c99 -fopenmp -O2 -ffast-math -o openmp1/binaries/v1b_O2_ffm_T160_N8192 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O2_ffm_T160_N8192.out -eo openmp1/results/v1b_O2_ffm_T160_N8192.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O2_ffm_T160_N8192 8192"
+STDOUT:
+Job <1501328> is submitted to default queue <short>.
+
+
+  98 | OPT=O2  | FM=ffm    | T=160 | N=16384  
+COMPILING:
+gcc -std=c99 -fopenmp -O2 -ffast-math -o openmp1/binaries/v1b_O2_ffm_T160_N16384 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O2_ffm_T160_N16384.out -eo openmp1/results/v1b_O2_ffm_T160_N16384.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O2_ffm_T160_N16384 16384"
+STDOUT:
+Job <1501329> is submitted to default queue <short>.
+
+
+  99 | OPT=O3  | FM=noffm  | T=160 | N=256    
+COMPILING:
+gcc -std=c99 -fopenmp -O3 -fno-fast-math -o openmp1/binaries/v1b_O3_noffm_T160_N256 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O3_noffm_T160_N256.out -eo openmp1/results/v1b_O3_noffm_T160_N256.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O3_noffm_T160_N256 256"
+STDOUT:
+Job <1501330> is submitted to default queue <short>.
+
+
+ 100 | OPT=O3  | FM=noffm  | T=160 | N=512    
+COMPILING:
+gcc -std=c99 -fopenmp -O3 -fno-fast-math -o openmp1/binaries/v1b_O3_noffm_T160_N512 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O3_noffm_T160_N512.out -eo openmp1/results/v1b_O3_noffm_T160_N512.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O3_noffm_T160_N512 512"
+STDOUT:
+Job <1501331> is submitted to default queue <short>.
+
+
+ 101 | OPT=O3  | FM=noffm  | T=160 | N=1024   
+COMPILING:
+gcc -std=c99 -fopenmp -O3 -fno-fast-math -o openmp1/binaries/v1b_O3_noffm_T160_N1024 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O3_noffm_T160_N1024.out -eo openmp1/results/v1b_O3_noffm_T160_N1024.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O3_noffm_T160_N1024 1024"
+STDOUT:
+Job <1501332> is submitted to default queue <short>.
+
+
+ 102 | OPT=O3  | FM=noffm  | T=160 | N=2048   
+COMPILING:
+gcc -std=c99 -fopenmp -O3 -fno-fast-math -o openmp1/binaries/v1b_O3_noffm_T160_N2048 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O3_noffm_T160_N2048.out -eo openmp1/results/v1b_O3_noffm_T160_N2048.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O3_noffm_T160_N2048 2048"
+STDOUT:
+Job <1501333> is submitted to default queue <short>.
+
+
+ 103 | OPT=O3  | FM=noffm  | T=160 | N=4096   
+COMPILING:
+gcc -std=c99 -fopenmp -O3 -fno-fast-math -o openmp1/binaries/v1b_O3_noffm_T160_N4096 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O3_noffm_T160_N4096.out -eo openmp1/results/v1b_O3_noffm_T160_N4096.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O3_noffm_T160_N4096 4096"
+STDOUT:
+Job <1501334> is submitted to default queue <short>.
+
+
+ 104 | OPT=O3  | FM=noffm  | T=160 | N=8192   
+COMPILING:
+gcc -std=c99 -fopenmp -O3 -fno-fast-math -o openmp1/binaries/v1b_O3_noffm_T160_N8192 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O3_noffm_T160_N8192.out -eo openmp1/results/v1b_O3_noffm_T160_N8192.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O3_noffm_T160_N8192 8192"
+STDOUT:
+Job <1501335> is submitted to default queue <short>.
+
+
+ 105 | OPT=O3  | FM=noffm  | T=160 | N=16384  
+COMPILING:
+gcc -std=c99 -fopenmp -O3 -fno-fast-math -o openmp1/binaries/v1b_O3_noffm_T160_N16384 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O3_noffm_T160_N16384.out -eo openmp1/results/v1b_O3_noffm_T160_N16384.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O3_noffm_T160_N16384 16384"
+STDOUT:
+Job <1501336> is submitted to default queue <short>.
+
+
+ 106 | OPT=O3  | FM=ffm    | T=160 | N=256    
+COMPILING:
+gcc -std=c99 -fopenmp -O3 -ffast-math -o openmp1/binaries/v1b_O3_ffm_T160_N256 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O3_ffm_T160_N256.out -eo openmp1/results/v1b_O3_ffm_T160_N256.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O3_ffm_T160_N256 256"
+STDOUT:
+Job <1501337> is submitted to default queue <short>.
+
+
+ 107 | OPT=O3  | FM=ffm    | T=160 | N=512    
+COMPILING:
+gcc -std=c99 -fopenmp -O3 -ffast-math -o openmp1/binaries/v1b_O3_ffm_T160_N512 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O3_ffm_T160_N512.out -eo openmp1/results/v1b_O3_ffm_T160_N512.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O3_ffm_T160_N512 512"
+STDOUT:
+Job <1501338> is submitted to default queue <short>.
+
+
+ 108 | OPT=O3  | FM=ffm    | T=160 | N=1024   
+COMPILING:
+gcc -std=c99 -fopenmp -O3 -ffast-math -o openmp1/binaries/v1b_O3_ffm_T160_N1024 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O3_ffm_T160_N1024.out -eo openmp1/results/v1b_O3_ffm_T160_N1024.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O3_ffm_T160_N1024 1024"
+STDOUT:
+Job <1501339> is submitted to default queue <short>.
+
+
+ 109 | OPT=O3  | FM=ffm    | T=160 | N=2048   
+COMPILING:
+gcc -std=c99 -fopenmp -O3 -ffast-math -o openmp1/binaries/v1b_O3_ffm_T160_N2048 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O3_ffm_T160_N2048.out -eo openmp1/results/v1b_O3_ffm_T160_N2048.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O3_ffm_T160_N2048 2048"
+STDOUT:
+Job <1501340> is submitted to default queue <short>.
+
+
+ 110 | OPT=O3  | FM=ffm    | T=160 | N=4096   
+COMPILING:
+gcc -std=c99 -fopenmp -O3 -ffast-math -o openmp1/binaries/v1b_O3_ffm_T160_N4096 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O3_ffm_T160_N4096.out -eo openmp1/results/v1b_O3_ffm_T160_N4096.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O3_ffm_T160_N4096 4096"
+STDOUT:
+Job <1501341> is submitted to default queue <short>.
+
+
+ 111 | OPT=O3  | FM=ffm    | T=160 | N=8192   
+COMPILING:
+gcc -std=c99 -fopenmp -O3 -ffast-math -o openmp1/binaries/v1b_O3_ffm_T160_N8192 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O3_ffm_T160_N8192.out -eo openmp1/results/v1b_O3_ffm_T160_N8192.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O3_ffm_T160_N8192 8192"
+STDOUT:
+Job <1501342> is submitted to default queue <short>.
+
+
+ 112 | OPT=O3  | FM=ffm    | T=160 | N=16384  
+COMPILING:
+gcc -std=c99 -fopenmp -O3 -ffast-math -o openmp1/binaries/v1b_O3_ffm_T160_N16384 v1b.c
+
+Running:
+bsub -n 20 -W 15 -R span[hosts=1] -oo openmp1/results/v1b_O3_ffm_T160_N16384.out -eo openmp1/results/v1b_O3_ffm_T160_N16384.err "OMP_NUM_THREADS=160 ./openmp1/binaries/v1b_O3_ffm_T160_N16384 16384"
+STDOUT:
+Job <1501343> is submitted to default queue <short>.
+
+
